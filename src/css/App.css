@@ -1,0 +1,12 @@
+.App {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+  box-sizing: border-box;
+  padding:20px;
+  margin:0 auto;
+  max-width:700px;
+}
+
+img{
+  max-width:600px;
+}
