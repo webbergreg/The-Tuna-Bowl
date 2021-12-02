@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './css/Recap.css';
+import '../css/Recap.css';
 
 interface IRecapProps{
   children:any;
@@ -7,7 +7,7 @@ interface IRecapProps{
 }
 export const Recap = ({title, children} :IRecapProps) => {
   return (
-    <section className="Recap">
+    <section className={`Recap recap-style-1`}>
       <h2>{title}</h2>
       {children}
     </section>
