@@ -1,9 +1,11 @@
 import * as React from 'react';
 import { Recap } from '../Recap';
 import mistake from '../../img/mistake.gif';
+import img3 from '../../img/numbers/3.1.gif';
 
 export const Week3 = ()=>{
-    return <Recap title = 'Week 3'>
+    const title = <>Week <img alt = '2' src = {img3}/></>
+    return <Recap style = {3} title = {title}>
         <p>Sweet fancy moses, quite a week of Football.</p>
         <p>What did we learn? </p>
         <p>Always start your studs.</p>

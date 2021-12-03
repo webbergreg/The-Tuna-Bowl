@@ -3,11 +3,13 @@ import cliffRupe from '../../img/cliffRupe.png';
 import hands from '../../img/hands.gif';
 import quidditch from '../../img/quidditch.jpg';
 import moranVsMedian from '../../img/moranVsMedian.gif';
+import img4 from '../../img/numbers/4.1.gif';
 
 import { Recap } from '../Recap';
 
 export const Week4 = ()=>{
-    return <Recap title = 'Week 4'>
+    const title = <>Week <img alt = '4' src = {img4}/></>
+    return <Recap style = {4} title = {title}>
         <p>What an emotional week that was. To say that doink off the upright Sunday night hurt would be an understatement. To give you an inkling, I’m not used to losing games like this. I don’t like it. I'm lost. I’m not sure what to do with my hands... </p>
         <img alt = 'Hands' src = {hands}/>
         <p>At least we’ll never have to see Bill play Brady again, unless both of them are still in the league in 4 years… Or we get a Super Bowl matchup!?? Go Pats!</p>

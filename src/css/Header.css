@@ -1,0 +1,40 @@
+.App-header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background:#b02153;
+    z-index:1000;
+  }
+
+.App-header .icon-set{
+  display: none;
+}
+
+.App-header video{
+  width:312px;
+  height:48px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .App-header{
+    height:160px;
+  }
+
+  .App-header .icon-set{
+      display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .App-header video{
+    width:720px;
+    height:120px;
+  }
+}
