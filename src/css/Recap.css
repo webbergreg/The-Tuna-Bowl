@@ -2,12 +2,11 @@
   text-align: left;
   font-size:14px;
   box-sizing: border-box;
-  padding-top:30px;
 }
 
 .recap-wrapper img{
   width:100%;
-  max-width:600px;
+  max-width:500px;
   padding:10px;
 }
 
@@ -23,7 +22,6 @@
 @media screen and (min-width: 768px) {
   .Recap{
     font-size:16px;
-    padding-top:80px;
   }
 
   .recap-wrapper{
