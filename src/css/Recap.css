@@ -4,10 +4,13 @@
   box-sizing: border-box;
 }
 
+.recap-wrapper{
+  padding:10px;
+}
+
 .recap-wrapper img{
   width:100%;
   max-width:500px;
-  padding:10px;
 }
 
 .Recap h3{
