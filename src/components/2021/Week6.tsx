@@ -5,14 +5,16 @@ import hulkNox from '../../img/hulkNox.gif';
 import hulkRyan from '../../img/hulkRyan.gif';
 import timNotes from '../../img/timNotes.gif';
 import mistake from '../../img/mistake.gif';
+import img6 from '../../img/numbers/6.2.gif';
 
 export const Week6 = ()=>{
-    return <Recap title = 'Week 6'>
+    const title = <>Week <img alt = '6' src = {img6}/></>
+    return <Recap styleInt = {6} title = {title}>
         <p>I won't say this was an easy week to recap. Watching 2 quarters of the Pats game, drunk in the passenger seat on DAZN eating up half my Data for the month is not how I like to spend my Football Sunday's. Especially when they lose in OT because Josh McD is a giant pussy and won't let MAC FUCKIN JONES SLING IT!! I mean come on Josh! Per PFF, Mac is currently ranked QB13 on the season and leading all rookies in his class and probably winning Rookie of the Year and we're seriously not going to go for it on 4th and 3 in OT when they haven't stopped Dak all F'in night!? Won't even bother mentioning the five other 4th and short punt aways we settled for. The only thing worse than being 2-4 is knowing they are EXTREMELY close to being 5-1. Sorry... I digress.. This is a Fantasy Recap not how good Mac Jones looks and how bright the future is for New England. Apologies, let's get back to fantasy.</p>
         <p>We actually got a decent game in London between two bad teams and saw the Jags come away with their first win of the season.. Speaking of first wins of the season, Team LouCrew still doesn't have one.</p>
         <p>Going into the Monday Nighter pretty much tied with Whitey 90-90, LouCrew just needed Devin SingleDigitary to outscore Stefon Diggin Louies Grave. And that's basically where you immediately lose hope if you're a spectator. Diggs outscored Singletary 20-7 and that's your ballgame. The streak continues as LouCrew now sits at 0-12 as we quickly approach the halfway mark of the season. Keep it up Louie! We're all pulling for you!</p>
         <p>NPC "Making History" update:<br/>I already had this big elaborate update written up on Monday for NPC's impressive, Biggest Blowout week 6 win over Timmay. How he's on pace for 1850 points on the season, which would be a Tuna Bowl record, how he's averaging a whopping 132 points a week, and how he's won 4 of 6 Highest Scorer Awards on the season but then MNF and Derrick Henry happened. Henry's 35 points carries RuCunt over Morans dead, lifeless body in a 145-116 thrashing. RuCunt goes 2-0 again on the week and earns his first Highest Scorer of the week award. NPC and Mon Cunt look to be the two top dogs running away with things as your solo 10-2 leaders.</p>
-        <p>Other items worth observing..</p>
+        <h3>Other items worth observing..</h3>
         <ol>
             <li>
                 <p>Well, Moran's at it again. What a fucking rollercoaster. Since updating his team name after a grueling Week 2 loss to Webber, here is Moran's stat line.

@@ -2,13 +2,13 @@
   text-align: left;
   font-size:14px;
   box-sizing: border-box;
-  padding:10px;
   padding-top:30px;
 }
 
 .recap-wrapper img{
   width:100%;
   max-width:600px;
+  padding:10px;
 }
 
 .Recap h3{
@@ -23,8 +23,11 @@
 @media screen and (min-width: 768px) {
   .Recap{
     font-size:16px;
-    padding:20px;
     padding-top:80px;
+  }
+
+  .recap-wrapper{
+    padding:20px;
   }
 }
 
@@ -78,6 +81,42 @@
 }
 
 .recap-style-4 h3{
-  color:rgba(205,203,44,1);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Franchise';
+}
+
+/* Style 5 */
+.recap-style-5 h2{
+  font-family:'sport_day';
+  background: linear-gradient(-45deg, maroon, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 1s ease infinite;
+  color:white;
+}
+
+.recap-style-5 h3{
+  font-family: fantasy;
+  color:#a64a15;
+}
+
+/* Style 6 */
+.recap-style-6 h2{
+  font-family:'love_craft_italic';
+  background:#8b0c0d;
+}
+
+.recap-style-6 h3{
+  color:#8b0c0d;
+  font-family: 'varsity_regular';
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }

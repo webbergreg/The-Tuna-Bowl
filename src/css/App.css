@@ -15,6 +15,26 @@
   src: url('/src/fonts/Redneck.ttf');
 }
 
+@font-face {
+  font-family: 'Circus';
+  src: url('/src/fonts/Circus.ttf');
+}
+
+@font-face {
+  font-family: 'varsity_regular';
+  src: url('/src/fonts/varsity_regular.ttf');
+}
+
+@font-face {
+  font-family: 'Franchise';
+  src: url('/src/fonts/Franchise.ttf');
+}
+
+@font-face {
+  font-family: 'love_craft_italic';
+  src: url('/src/fonts/love_craft_italic.otf');
+}
+
 .App {
   text-align: left;
   box-sizing: border-box;

@@ -4,11 +4,11 @@ import '../css/Recap.css';
 interface IRecapProps{
   children:any;
   title:any;
-  style?:number;
+  styleInt?:number;
 }
-export const Recap = ({title, children, style} :IRecapProps) => {
+export const Recap = ({title, children, styleInt} :IRecapProps) => {
   return (
-    <section className={`Recap recap-style-${style}`}>
+    <section className={`Recap recap-style-${styleInt}`}>
       <h2>{title}</h2>
       <div className = 'recap-wrapper'>
         {children}
