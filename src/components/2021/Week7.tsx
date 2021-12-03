@@ -3,9 +3,11 @@ import { Recap } from '../Recap';
 import rupeLaughWaiver from '../../img/rupeLaughWaiver.gif';
 import frankX from '../../img/frankX.gif';
 import mistakeJeffFields from '../../img/mistakeJeffFields.gif';
+import img7 from '../../img/numbers/7.1.gif';
 
 export const Week7 = ()=>{
-    return <Recap title = 'Week 7'>
+    const title = <>Week <img alt = '7' src = {img7}/></>
+    return <Recap styleInt = {7} title = {title}>
         <p>The Patriots are now 3-4 and second place in the AFC East and have the same record as the Chiefs. They're 3 bone head plays aways from being 6-1 folks. Life is good. Not sure who wants to hear these facts but I will continue to relay them until Whitey admits Mac Jones is a god damn stud and the best QB out of this draft. I mean, look at his pace, Curt!! Look at it!! 54-13 over the Jets. LOVE IT!
             <br/><a rel = 'noreferrer' href = 'https://twitter.com/FitzyGFY/status/1389993210391498753?s=20' target = '_blank'>https://twitter.com/FitzyGFY/status/1389993210391498753?s=20</a>
         </p>
