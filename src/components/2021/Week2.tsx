@@ -1,9 +1,11 @@
 import * as React from 'react';
 import { Recap } from '../Recap';
 import moran from '../../img/moran.png';
+import img2 from '../../img/numbers/2.2.gif';
 
 export const Week2 = ()=>{
-    return <Recap title = 'Week 2'>
+    const title = <>Week <img alt = '2' src = {img2}/></>
+    return <Recap style = {2} title = {title}>
         <p>Week 2’s in the bag and I can’t be the only one a bit concerned with Rupes team. Wins the Worst Manager award after putting up 145 points of a possible 175? Doesn’t hurt when your 3 keepers put up 100 points. So good job Curtis, you picked 3 great keepers.</p>
         <h3>What are some highlights?</h3>
         <ol>

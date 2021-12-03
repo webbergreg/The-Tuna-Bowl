@@ -5,14 +5,24 @@
   src: url('/src/fonts/University.otf');
 }
 
+@font-face {
+  font-family: 'sport_day';
+  src: url('/src/fonts/sport_day.otf');
+}
+
+@font-face {
+  font-family: 'Redneck';
+  src: url('/src/fonts/Redneck.ttf');
+}
+
 .App {
   text-align: left;
   box-sizing: border-box;
   margin:0 auto;
-  max-width:1000px;
+  max-width:900px;
   background:white;
   font-size:16px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 section{
@@ -20,30 +30,20 @@ section{
   padding-top:80px;
 }
 
-h1, h2, h3{
-  color:#29a500;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-transform:uppercase;
-}
-
 ul{
   list-style-type: square;
 }
 
-h1{
-  text-align: center;
-}
-
-h2{
-  border-bottom:2px dashed #fee801;
+h1, h2{
+  font-size:3.5em;
+  text-transform:uppercase;
   text-align: center;
 }
 
 h3{
-  color:#ff6d1a;
+  font-size:2em;
+  text-transform:uppercase;
 }
-
-
 
 body{
   background-image:url('/src/img/field_bg_2.png');
@@ -66,16 +66,4 @@ img{
   align-items:center;
   background:#b02153;
   z-index:1000;
-}
-
-.recap-style-1 h3{
-  font-size:2em;
-  font-family: 'University';
-  padding-left:40px;
-  background-image:url('/src/img/fgif2.gif');
-  text-shadow: 2px 2px black;
-  filter:blur(0.5px);
-  background-size:36px 30px;
-  background-repeat:no-repeat;
-  background-position:center left;
 }

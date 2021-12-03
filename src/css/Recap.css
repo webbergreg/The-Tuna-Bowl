@@ -2,5 +2,35 @@
   margin-top:100px;
   text-align: left;
 }
-  
-  
+
+h3{
+  padding-left:40px;
+  background-image:url('/src/img/fgif2.gif');
+  filter:blur(0.5px);
+  background-size:36px 30px;
+  background-repeat:no-repeat;
+  background-position:center left;
+}
+
+.recap-style-1 h2{
+  font-family: 'Redneck';
+  filter:blur(0.5px);
+  color:#000525;
+}
+
+.recap-style-1 h3{
+  color:#ff6d1a;
+  font-family: 'University';
+  text-shadow: 2px 2px black;
+}
+
+.recap-style-2 h2{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:#00ffff;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+.recap-style-2 h3{
+  color:#26150a;
+  font-family: 'sport_day';
+}
