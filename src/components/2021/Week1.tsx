@@ -1,4 +1,4 @@
-import * as React from 'react';
+import LazyImg from '../LazyImg';
 import { Recap } from '../Recap';
 import sermon from '../../img/sermon.jpg';
 import img1 from '../../img/numbers/1.1.gif';
@@ -24,6 +24,6 @@ export const Week1 = ()=>{
         </ul>
         <p>That about sums up Week 1. Can’t wait to see what this week has in store.</p>
         <p>*I decided to bring back the penalty for starting players that are OUT/BYE/INACTIVE before the season started. Glad I did. Rupe, for your new team name we’re going to the Mount of Beatitudes where some believe none other than Jesus himself delivered the Sermon on the Mount! Just a coupla phonies spewing nonsense to whoever will listen! Seemed fitting. Your new team name is Sermon on the Mount and here is your new team logo. Be better, Rupe. It’s really not that hard.</p>
-        <img alt = 'Sermon on the Mount' src = {sermon}/>
+        <LazyImg alt = 'Sermon on the Mount' src = {sermon}/>
     </Recap>
 }

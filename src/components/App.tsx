@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 import '../css/App.css';
 
 import { Season2021 } from './2021/Season2021';

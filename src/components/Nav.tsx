@@ -1,4 +1,3 @@
-import * as React from 'react';
 import '../css/Nav.css';
 import draft from '../img/draft.gif';
 import trophy_2 from '../img/trophy_2.gif';

@@ -1,4 +1,3 @@
-import * as React from 'react';
 import '../css/Recap.css';
 
 interface IRecapProps{

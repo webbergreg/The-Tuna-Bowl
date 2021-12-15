@@ -1,4 +1,4 @@
-import * as React from 'react';
+import LazyImg from '../LazyImg';
 import { Recap } from '../Recap';
 import unnamed from '../../img/unnamed.gif';
 import hulkNox from '../../img/hulkNox.gif';
@@ -25,18 +25,18 @@ export const Week6 = ()=>{
                 <br/>Week 6 - 1-1
                 <br/>Week 7 - ???
                 </p>
-                <img alt = 'Unnamed' src = {unnamed}/>
+                <LazyImg alt = 'Unnamed' src = {unnamed}/>
                 <p>Jesus, I'm nauseous just reviewing this, I can't imagine how Moran's feeling. The Median is just toying with him at this point. Sitting at 5-7 after a rare win vs the Median and in 8th place, Moran is in desperate territory here for someone with so much draft capital and promise going into the season. Get ready, I suspect a few more trades made directly out of fear of missing the playoffs once again. After an ugly loss to his Fantasy mortal enemy RuCunt, Moran is looking at a nasty week 7 matchup vs NPC. This could get ugly.</p>
             </li>
             <li>
                 <p>Week 6 kicked off with a bang. We had Jeff Gillies go all in on DAA BEARS. He can't help himself. First we had Nox trade him Bobby Trees and an injured David Montgomery(IR for 5 more weeks) for an equal receiver in Pittman and a purebred Stud, James Robinson... DAAAA BEARS!</p>
-                <img alt = 'Hulk Nox' src = {hulkNox}/>
+                <LazyImg alt = 'Hulk Nox' src = {hulkNox}/>
                 <p>But Jeff wasn't done there. Once he realized Monty was in fact on IR and couldn't use him until week 11, he made a deal with the Ripper. Swapping starting running back Damien Harris for DAA BEARS 3rd string rookie, Khalil Herbert. When asked if Jeff knew what he was doing he replied, "Absolutely. DAAA BEARS!"</p>
-                <img alt = 'Hulk Ryan' src = {hulkRyan}/>
+                <LazyImg alt = 'Hulk Ryan' src = {hulkRyan}/>
                 <p>Meanwhile, Tim has taken notice and is looking at Allen Robinson's value skyrocket.</p>
-                <img alt = {`Timmy's notes`} src = {timNotes}/>
+                <LazyImg alt = {`Timmy's notes`} src = {timNotes}/>
                 <p>Well after all DAAA BEARS trades and a gut-wrenching 109.1-108.1 loss to the Ripper and Damien Harris, guess who just dropped in the rankings to 7th place and is now on the outside looking in at his first playoff birth since joining the Tuna Bowl back in 2019? Is it Jeff Gillies? Absolutely.</p>
-                <img alt = {`I've made a huge mistake`}src = {mistake}/>
+                <LazyImg alt = {`I've made a huge mistake`}src = {mistake}/>
             </li>
         </ol>    
     </Recap>

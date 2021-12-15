@@ -1,4 +1,3 @@
-import * as React from 'react';
 import fgif2 from '../img/fgif2.gif';
 import nfl_helpet from '../img/nfl_helpet.gif';
 import nfl from '../img/nfl.gif';

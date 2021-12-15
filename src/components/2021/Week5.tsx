@@ -1,4 +1,4 @@
-import * as React from 'react';
+import LazyImg from '../LazyImg';
 import { Recap } from '../Recap';
 import louieVsLouCrew1 from '../../img/louieVsLouCrew1.jpg';
 import louieVsLouCrew2 from '../../img/louieVsLouCrew2.jpg';
@@ -20,16 +20,16 @@ export const Week5 = ()=>{
             <li>
                 <p>Louie, Louie, Louie... What can we say about Team LouCrew. Don't be fooled, what he's doing is impressive. Through 5 weeks LouCrew is sitting at 0-10 with 391 Points For on the season. Going to be tough to beat the median or an opponent with an average point total of 78 a week. In a battle of the Jeff's this week, Gillies laid the hammer. Pummelling Lou 156-52!! Beat him by 104!! The difference he beat him by is double what Louie scored on the day!! hahaha Amazing. I couldn't help but laugh hearing Louie complaining about how bad his team is and it's like this never happened just two weeks ago..</p>
                 <p>Week 3 Louie - Sells top 2 players</p>
-                <img alt = 'Louie vs LouCrew 1' src = {louieVsLouCrew1}/>
+                <LazyImg alt = 'Louie vs LouCrew 1' src = {louieVsLouCrew1}/>
                 <p>Week 5 Louie - "How did this happen?"</p>
-                <img alt = 'Louie vs LouCrew 2' src = {louieVsLouCrew2}/>
+                <LazyImg alt = 'Louie vs LouCrew 2' src = {louieVsLouCrew2}/>
             </li>
             <li>
                 <p>And Moran is back to Massacring that Median. What a rollercoaster. Going into Monday night I don't think anyone would have been surprised with another 0-2 from Moran. Unfortunately for Frank and the Median, Morans big swinging bag of Mark Andrews and his 36 points came to play. Moran goes 2-0 on the week and is slowly climbing those rankings!</p>
             </li>
             <li>
                 <p>I should also mention with Moran putting up that point total Sunday night it only means one thing. Someone who thought they were a lock for that win against the median woke up Tuesday morning extremely disappointed. That person this week was none other than Nox the Dogpound Mutt!</p>
-                <img alt = 'Moran vs the Median 2' src = {moranVsMedian2}/>
+                <LazyImg alt = 'Moran vs the Median 2' src = {moranVsMedian2}/>
             </li>
         </ol>
         <p>We just had some big time trades today but we'll wait until Week 6 recap to cover that. Good luck Tunas and set those lineups!</p>
