@@ -8,7 +8,7 @@ export const Nav = ()=>{
     const {seasonKey} = useContext(SeasonContext);
 
     return <nav className="App-nav">
-        <a href = {`/${seasonKey}/draft`}>{WEEK_MARKERS.WEEK0}</a>
+        <a href = {`/${seasonKey}/week-0`}>{WEEK_MARKERS.WEEK0}</a>
         <a href = {`/${seasonKey}/week-1`}>{WEEK_MARKERS.WEEK1}</a>
         <a href = {`/${seasonKey}/week-2`}>{WEEK_MARKERS.WEEK2}</a>
         <a href = {`/${seasonKey}/week-3`}>{WEEK_MARKERS.WEEK3}</a>
