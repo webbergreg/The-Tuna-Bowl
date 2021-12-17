@@ -5,9 +5,11 @@ import top_ropes from '../../img/top_ropes.gif';
 import you_suck from '../../img/you_suck.gif';
 import nooooooo from '../../img/nooooooo.gif';
 import worlds_worst_nox from '../../img/worlds_worst_nox.gif';
+import img12 from '../../img/numbers/12.gif';
 
 export const Week12 = ()=>{
-    return <Recap title = 'Week 12 Confusioncap'>
+    const title = <>Week <img alt = '11' src = {img12}/> Confusioncap</>
+    return <Recap styleInt = {12} title = {title}>
        <p>Week 12 kicked off with Thanksgiving Thursday. Pretty standard stuff here guys. DAAA Bears and Lions had a nasty game that nobody will ever ever remember. Raiders squeaked out a close one over dem Cowboys and the Bills annihilated the Saints. Sunday had some ups and downs. The corpse of Big Ben getting trounced by the Bungles was tough to watch. Eagles/Giants in a classic NFC East showdown with the Giants winning 13-7 was somehow less memorable than the Bears/Lions game. Bucs/Colts game was, however, a doozy where we saw Uncle Lenny take over the game with 4 TDs in an absolute barn burner with the Bucs winning 38-31. And last but not least, I have to mention those pesky Patriots..</p> 
        <p>And just like that, The New England Football Patriots are back in 1st place in the AFC East and 2nd place in all of the AFC just one game behind the Baltimore Ravens. Once upon a time sitting at 2-4 with a 21% chance of making the playoffs they've won 6 straight in dominating fashion and now face a 91% chance of making the playoffs. Just forcing their will upon opposing teams. I for one am here for Revenge Bill. These Pats are on fire. Number 1 in Point Differential with a +146 on the season. In case you didn't know, Curtis, that's a very important stat in determining football winners. Bill Belichick, Coach of the Year, Mac Jones, Rookie of the year. Ya just gotta love it! With more wins so far this season than they had all of last year with 5 games left to play, you have to be excited about this team!</p>
        <p>But enough about that red hot team. Let's shift our focus to the hottest team in the Tuna Bowl. Team LouCrew has done it again! 0-2 baby! This was it! So close to beating that median but Nox said, "Hey Rondinko Baby! nice 105-100 victory. Let me finish this Louuuuuser off!" and WHAMMEY out of nowhere from the top ropes to squash every bit of hope LouCrew had left! HE'S DEAD!!!</p>

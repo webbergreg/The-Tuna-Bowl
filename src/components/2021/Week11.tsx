@@ -4,9 +4,11 @@ import boomRoast from '../../img/boomRoast.gif';
 import rainSad2 from '../../img/rainSad2.gif';
 import runOver from '../../img/runOver.gif';
 import folkHero from '../../img/folkHero.jpg';
+import img11 from '../../img/numbers/11.gif';
 
 export const Week11 = ()=>{
-    return <Recap title = 'Week 11 Byecap'>
+    const title = <>Week <img alt = '11' src = {img11}/> Byecap</>
+    return <Recap styleInt = {11} title = {title}>
         <p>This was going to be my bye week but Nox said he'd hurt himself if I didn't put something out so I'll try to keep this short and sweet. So let's get at it.</p>
         <p>Well well well, look who's the most hated team in the NFL once again! That's 5 wins in a row now for the red hot Pats, and I'm about ready to blow a Gaskin! With a matchup against the first place Titans this Sunday it's possible that.... Hell, I don't want to jinx it!!</p>
         <p>Honestly other than that a pretty tame week of football. Ravens squeaked out a victory over DAAA Bears without Lamar who apparently had a bad case of IBS leading up to the game. Vikings were too much for Rodgers and his sore pinky toe, Colts embarrassed the struggling Bills and we ended Sunday with a thriller down in LA where the Steelers and Chargers had a shootout with the Chargers coming out on top 41-37.</p>

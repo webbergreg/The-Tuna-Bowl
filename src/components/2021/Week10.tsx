@@ -6,9 +6,11 @@ import hayyy from '../../img/hayyy.gif';
 import hole from '../../img/hole.gif';
 import imBack from '../../img/imBack.gif';
 import steam2 from '../../img/steam2.gif';
+import ten from '../../img/numbers/10.gif';
 
 export const Week10 = ()=>{
-    return <Recap title = 'Week 10'>
+    const title = <>Week <img alt = '10' src = {ten}/></>
+    return <Recap styleInt = {10} title = {title}>
         <h3>Injury Report:</h3>
         <p>Position: Tuna Bowl Recap writer
             <br/>Injury: Wrist/Hand Carpal Tunnel, Neck

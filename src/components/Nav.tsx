@@ -9,19 +9,27 @@ import img5 from '../img/numbers/5.1.gif';
 import img6 from '../img/numbers/6.2.gif';
 import img7 from '../img/numbers/7.1.gif';
 import img8 from '../img/numbers/8.1.gif';
+import img9 from '../img/numbers/9.1.gif';
+import img10 from '../img/numbers/10.gif';
+import img11 from '../img/numbers/11.gif';
+import img12 from '../img/numbers/12.gif';
 
-export const Nav = ()=>{
+export const Nav = ({seasonKey})=>{
 
     return <nav className="App-nav">
         <img alt = 'Nav 1' src = {draft}/>
-        <a href = '#recap-1'><img alt = 'Nav 1' src = {img1}/></a>
-        <a href = '#recap-2'><img alt = 'Nav 2' src = {img2}/></a>
-        <a href = '#recap-3'><img alt = 'Nav 3' src = {img3}/></a>
-        <a href = '#recap-4'><img alt = 'Nav 4' src = {img4}/></a>
-        <a href = '#recap-5'><img alt = 'Nav 5' src = {img5}/></a>
-        <a href = '#recap-6'><img alt = 'Nav 6' src = {img6}/></a>
-        <a href = '#recap-7'><img alt = 'Nav 7' src = {img7}/></a>
-        <a href = '#recap-8'><img alt = 'Nav 8' src = {img8}/></a>
+        <a href = {`/${seasonKey}/week-1`}><img alt = 'Nav 1' src = {img1}/></a>
+        <a href = {`/${seasonKey}/week-2`}><img alt = 'Nav 2' src = {img2}/></a>
+        <a href = {`/${seasonKey}/week-3`}><img alt = 'Nav 3' src = {img3}/></a>
+        <a href = {`/${seasonKey}/week-4`}><img alt = 'Nav 4' src = {img4}/></a>
+        <a href = {`/${seasonKey}/week-5`}><img alt = 'Nav 5' src = {img5}/></a>
+        <a href = {`/${seasonKey}/week-6`}><img alt = 'Nav 6' src = {img6}/></a>
+        <a href = {`/${seasonKey}/week-7`}><img alt = 'Nav 7' src = {img7}/></a>
+        <a href = {`/${seasonKey}/week-8`}><img alt = 'Nav 8' src = {img8}/></a>
+        <a href = {`/${seasonKey}/week-9`}><img alt = 'Nav 9' src = {img9}/></a>
+        <a href = {`/${seasonKey}/week-10`}><img alt = 'Nav 10' src = {img10}/></a>
+        <a href = {`/${seasonKey}/week-11`}><img alt = 'Nav 11' src = {img11}/></a>
+        <a href = {`/${seasonKey}/week-12`}><img alt = 'Nav 12' src = {img12}/></a>
         <img alt = 'Nav 1' src = {trophy_2}/>
     </nav>
 }
