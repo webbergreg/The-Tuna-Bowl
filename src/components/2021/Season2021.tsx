@@ -29,14 +29,18 @@ import {
     Route,
   } from "react-router-dom";
 import { Nav } from '../Nav';
+import { SeasonContext } from '../App';
+import { Week0 } from './Week0';
 
 export const Season2021 = ()=>{
+
+    const SEASON_KEY = '2021';
 
     const placeholder = <div className = 'placeholder'>
         <img src = {construction} alt = 'Under Construction'/>
     </div>;
 
-    const season = <section id = {`season-2021`} className={`Season`}>
+    const season = <section id = {`season-${SEASON_KEY}`} className={`Season`}>
         <h2 className = 'Season-title'>
             <img src = {fgif2} alt = 'football'/>
             <img src = {img2} alt = '2'/>
@@ -50,9 +54,9 @@ export const Season2021 = ()=>{
             <div>Recaps</div>
             <img src = {football_5} alt = 'Turkey'/>
         </h3>
-        <img className = 'Season-rule' src = {divider1} alt = 'divider'/>
-        <Nav seasonKey = {'2021'}/>
-        <img className = 'Season-rule' src = {divider1} alt = 'divider'/>
+        <img className = 'rule' src = {divider1} alt = 'divider'/>
+        <Nav/>
+        <img className = 'rule' src = {divider1} alt = 'divider'/>
         <div className = 'Season-results'>
             <div id = 'champ' className = 'Season-results-section'>
                 <h4>
@@ -69,23 +73,24 @@ export const Season2021 = ()=>{
         </div>
     </section>
 
-    return <>
+    return <SeasonContext.Provider value={{seasonKey:SEASON_KEY}}>
         <Routes>
-          <Route path = '/' element = {season}></Route>
-          <Route path = '/week-1' element = {<Week1/>}/>
-          <Route path = '/week-2' element = {<Week2/>}/>
-          <Route path = '/week-3' element = {<Week3/>}/>
-          <Route path = '/week-4' element = {<Week4/>}/>
-          <Route path = '/week-5' element = {<Week5/>}/>
-          <Route path = '/week-6' element = {<Week6/>}/>
-          <Route path = '/week-7' element = {<Week7/>}/>
-          <Route path = '/week-8' element = {<Week8/>}/>
-          <Route path = '/week-9' element = {<Week9/>}/>
-          <Route path = '/week-10' element = {<Week10/>}/>
-          <Route path = '/week-11' element = {<Week11/>}/>
-          <Route path = '/week-12' element = {<Week12/>}/>
-          <Route path = '/week-13' element = {<Week13/>}/>
-          <Route path = '/week-14' element = {<Week14/>}/>
+            <Route path = '/' element = {season}></Route>
+            <Route path = '/week-0' element = {<Week0/>}/>
+            <Route path = '/week-1' element = {<Week1/>}/>
+            <Route path = '/week-2' element = {<Week2/>}/>
+            <Route path = '/week-3' element = {<Week3/>}/>
+            <Route path = '/week-4' element = {<Week4/>}/>
+            <Route path = '/week-5' element = {<Week5/>}/>
+            <Route path = '/week-6' element = {<Week6/>}/>
+            <Route path = '/week-7' element = {<Week7/>}/>
+            <Route path = '/week-8' element = {<Week8/>}/>
+            <Route path = '/week-9' element = {<Week9/>}/>
+            <Route path = '/week-10' element = {<Week10/>}/>
+            <Route path = '/week-11' element = {<Week11/>}/>
+            <Route path = '/week-12' element = {<Week12/>}/>
+            <Route path = '/week-13' element = {<Week13/>}/>
+            <Route path = '/week-14' element = {<Week14/>}/>
         </Routes>
-    </>
+    </SeasonContext.Provider>
 }

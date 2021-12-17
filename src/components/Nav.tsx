@@ -1,7 +1,11 @@
 import '../css/Nav.css';
 import { WEEK_MARKERS } from '../icons';
+import {useContext} from 'react';
+import { SeasonContext } from './App';
 
-export const Nav = ({seasonKey})=>{
+export const Nav = ()=>{
+
+    const {seasonKey} = useContext(SeasonContext);
 
     return <nav className="App-nav">
         <a href = {`/${seasonKey}/draft`}>{WEEK_MARKERS.WEEK0}</a>

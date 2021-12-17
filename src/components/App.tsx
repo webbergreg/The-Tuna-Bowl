@@ -1,5 +1,5 @@
 import '../css/App.css';
-
+import { createContext } from 'react';
 import { Season2021 } from './2021/Season2021';
 import { Header } from './Header';
 import {
@@ -7,6 +7,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+
+export const SeasonContext = createContext({seasonKey:''});
 
 export const App = () =>{
   return (

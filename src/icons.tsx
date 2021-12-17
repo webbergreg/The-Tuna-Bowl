@@ -1,4 +1,5 @@
 import draft from './img/draft.gif';
+import trophy_2 from './img/trophy_2.gif';
 import img1 from './img/numbers/1.1.gif';
 import img2 from './img/numbers/2.2.gif';
 import img3 from './img/numbers/3.1.gif';
@@ -27,5 +28,8 @@ export const WEEK_MARKERS = {
     WEEK11:<img alt = 'Nav 11' src = {img11}/>,
     WEEK12:<img alt = 'Nav 12' src = {img12}/>,
     WEEK13:'13',
-    WEEK14:'14'
+    WEEK14:'14',
+    Week15:'Q',
+    Week16:'S',
+    WEEK17:<img alt = 'Draft' src = {trophy_2}/>,
 }
