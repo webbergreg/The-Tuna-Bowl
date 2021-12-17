@@ -17,7 +17,8 @@
 }
 
 .rule{
-    width:100%;
+    width:100% !important;
+    max-width:unset !important;
     height:4px;
 }
 

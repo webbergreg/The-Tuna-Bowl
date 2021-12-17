@@ -35,6 +35,11 @@
   src: url('/src/fonts/love_craft_italic.otf');
 }
 
+@font-face {
+  font-family: 'ComicaRegular';
+  src: url('/src/fonts/ComicaRegular.otf');
+}
+
 .App {
   text-align: left;
   box-sizing: border-box;
