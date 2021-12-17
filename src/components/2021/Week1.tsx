@@ -1,12 +1,12 @@
 import LazyImg from '../LazyImg';
 import { Recap } from '../Recap';
 import sermon from '../../img/sermon.jpg';
-import img1 from '../../img/numbers/1.1.gif';
+import { WEEK_MARKERS } from '../../icons';
 
 export const Week1 = ()=>{
 
-    const title = <>Week <img alt = '1' src = {img1}/></>
-    return <Recap styleInt = {1} title = {title}>
+    const title = <>Week {WEEK_MARKERS.WEEK1}</>
+    return <Recap weekInt = {1} title = {title}>
         <p>And away we go!</p>
         <p>Week 1’s in the bag and boys O boys it’s good to have football back. Here’s a quick rundown of some of the highs and lows for all of you barely following along. Unbiased of course.</p>
         <h3>Highlights</h3>

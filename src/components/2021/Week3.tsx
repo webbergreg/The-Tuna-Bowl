@@ -1,11 +1,11 @@
 import LazyImg from '../LazyImg';
 import { Recap } from '../Recap';
 import mistake from '../../img/mistake.gif';
-import img3 from '../../img/numbers/3.1.gif';
+import { WEEK_MARKERS } from '../../icons';
 
 export const Week3 = ()=>{
-    const title = <>Week <img alt = '2' src = {img3}/></>
-    return <Recap styleInt = {3} title = {title}>
+    const title = <>Week {WEEK_MARKERS.WEEK3}</>
+    return <Recap weekInt = {3} title = {title}>
         <p>Sweet fancy moses, quite a week of Football.</p>
         <p>What did we learn? </p>
         <p>Always start your studs.</p>

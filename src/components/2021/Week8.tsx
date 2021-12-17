@@ -5,11 +5,11 @@ import upsetLouie from '../../img/upsetLouie.gif';
 import ryanScared from '../../img/ryanScared.gif';
 import homerDave from '../../img/homerDave.gif';
 import daveRealityCheck from '../../img/daveRealityCheck.gif';
-import img8 from '../../img/numbers/8.1.gif';
+import { WEEK_MARKERS } from '../../icons';
 
 export const Week8 = ()=>{
-    const title = <>Week <img alt = '8' src = {img8}/> Shitcap</>
-    return <Recap styleInt = {8} title = {title}>
+    const title = <>Week {WEEK_MARKERS.WEEK8} Shitcap</>
+    return <Recap weekInt = {8} title = {title}>
         <p>8 Weeks into the season and what have we learned? Never bet on the goddamn Bungles! There, there's your PSA for 2021. Survivor Pools are the goddamn worst!</p>
         <p>What a weekend of football folks. The fudge packers upset the Cards, the Jets upset the red hot Bengals, Titans with the OT comeback winner, Falcons did Falcons things and blew a very winnable game against the terrible Panthers. Big Ben isn't dead yet and proved that with a win over the Browns and last but not least how bout dem Patriots!? They're back to 4-4 and just beat up on a good Chargers offense led by Herbert and Ekeler for what feels like the 30th time in a row. They're now only one game back of the Bills for first place in the AFC East and everyone's nightmare is about to start over from scratch. Mac Jones baby! LOOK AT HIS PACE, CURTIS!!</p>
         <p>Now, onto fantasy. We had a lot of Power Shifts going on this week so let's take a look at how things stand after 8 weeks.</p>

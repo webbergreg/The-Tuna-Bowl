@@ -12,9 +12,11 @@ import comingSoon from '../../img/comingSoon-01.png';
 import throne from '../../img/throne.gif';
 import puke from '../../img/puke.gif';
 import arrows from '../../img/arrows.gif';
+import { WEEK_MARKERS } from '../../icons';
 
 export const Week14 = ()=>{
-    return <Recap title = 'Week 14 Muttcap'>
+    const title = <>Week {WEEK_MARKERS.WEEK14} Muttcap</>
+    return <Recap title = {title} weekInt = {14}>
         <LazyImg src = {rDogs} alt ='Reservoir Dogs'/> 
         <p className = 'caption'>Dramatization of NPC's Christmas Holiday visiting The Mutts.</p>
         <p>Wow.. Normally I'd take this time to brush up on the fact even on their bye week the Patriots are still winning. With the Bills loosing to the Bucaneers in an OT nail biter and the Ravens loosing to the Browns they've all but locked up that 1st seed in the AFC. Exciting times if you're a fan. Sadly, I witnessed some appalling actions over the weekend slate of games that frankly, just makes me sick. There's a set of unwritten rules in Fantasy Football that I'll get to shortly and I for one can't believe NPC hasn't shut down the league and donated all the money to the Salvation Army after his depressing trip to the liquor store Tuesday morning. Just call it a season and walk away. Where's the integrity? The honour? The Mutts are on my radar now too. You can never trust a mutt as they say. Once a mutt, always a mutt. Put a mutt in a corner and you've got a lose cannon on your hands.</p>

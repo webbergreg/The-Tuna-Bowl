@@ -6,11 +6,11 @@ import hayyy from '../../img/hayyy.gif';
 import hole from '../../img/hole.gif';
 import imBack from '../../img/imBack.gif';
 import steam2 from '../../img/steam2.gif';
-import ten from '../../img/numbers/10.gif';
+import { WEEK_MARKERS } from '../../icons';
 
 export const Week10 = ()=>{
-    const title = <>Week <img alt = '10' src = {ten}/></>
-    return <Recap styleInt = {10} title = {title}>
+    const title = <>Week {WEEK_MARKERS.WEEK10}</>
+    return <Recap weekInt = {10} title = {title}>
         <h3>Injury Report:</h3>
         <p>Position: Tuna Bowl Recap writer
             <br/>Injury: Wrist/Hand Carpal Tunnel, Neck

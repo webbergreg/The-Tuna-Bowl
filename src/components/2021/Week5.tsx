@@ -3,11 +3,11 @@ import { Recap } from '../Recap';
 import louieVsLouCrew1 from '../../img/louieVsLouCrew1.jpg';
 import louieVsLouCrew2 from '../../img/louieVsLouCrew2.jpg';
 import moranVsMedian2 from '../../img/moranVsMedian2.gif';
-import img5 from '../../img/numbers/5.1.gif';
+import { WEEK_MARKERS } from '../../icons';
 
 export const Week5 = ()=>{
-    const title = <>Week <img alt = '5' src = {img5}/></>
-    return <Recap styleInt = {5} title = {title}>
+    const title = <>Week {WEEK_MARKERS.WEEK5}</>
+    return <Recap weekInt = {5} title = {title}>
         <p>Whitey can you still kick a football? I heard there's open tryouts across the league. Boy did we have some games this week. Missed kicks galore, everybody's injured, week 5 Sunday was the longest day of NFL football in the last 50 years, from London's morning stinker to the delayed Bills and Chiefs matchup Sunday night. What a day and what a week.</p>
         <p>On top of all that, fantasy did not disappoint. Tuna Bowl had 6! 6 teams go over 130 points this week. That's unheard of and with all that scoring let's dive into the high's and low's of week 5.</p>
         <ol>

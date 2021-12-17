@@ -6,9 +6,11 @@ import matrix from '../../img/matrix.gif';
 import DiggsNox from '../../img/DiggsNox.jpg';
 import ryanWhipCream from '../../img/ryanWhipCream.jpg';
 import ryanChance from '../../img/ryanChance.gif';
+import { WEEK_MARKERS } from '../../icons';
 
 export const Week13 = ()=>{
-    return <Recap title = 'Week 13 Kalimacap'>
+    const title = <>Week {WEEK_MARKERS.WEEK13} Kalimacap</>
+    return <Recap weekInt = {13} title = {title}>
         <p>Apologies for the delay on the recap. Found myself up until 3 am on a Monday night bender celebrating and to be honest, slept from 7pm Tuesday until 6am Wednesday morning! Better late than never though so let's get into it.</p>
         <p>Well that was something. Listen, I don't want to have to do this but I'm not sure it's something that can be ignored. I pride myself on being an unbiased Tuna Bowl reporter. That's why the Commish pays me the big bucks to report on all things football and Tuna Bowl. Again, I don't normally like to focus on one team or one game in particular when I sit down and get these recaps going but come on. Did anyone see that masterpiece on Monday night!</p>
         <p>I'd report on all the Sunday action but frankly, I blacked out as soon as we kicked off Monday night, Pats vs Bills in Orchard Park. When you've got a division game with top seed in the AFC on the line vs Bills Mafia and co in a goddamn Tornizzard with 60mph winds you best be ready! And bahhgawd were the Pats ready! </p>
