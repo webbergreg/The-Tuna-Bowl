@@ -41,6 +41,7 @@
   width:100%;
   background:white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 ul{
@@ -82,4 +83,23 @@ img{
     width:800px;
     margin:0 auto;
   }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 21px;
+  height: px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: silver;
+  border-left: ridge 2px #fff;
+  border-top: ridge 2px #fff;
+  border-right: ridge 2px grey;
+  border-bottom: ridge 2px grey;
+}
+
+::-webkit-scrollbar-track {
+  background-image:url('../img/bg-scrollbar-track@2x.png');
+  background-size:2px;
 }
