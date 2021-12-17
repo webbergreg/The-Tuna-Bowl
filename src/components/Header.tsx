@@ -16,6 +16,6 @@ export const Header = ()=>{
             <LazyImg alt = 'NFL logo' src = {nfl}/>  
             <LazyImg alt = 'Trophy' src = {trophy}/>
         </div>
-        <video width = {780} height = {120} loop autoPlay muted src = {`${CLOUDFRONT_DISTRO}/vid/headerAnimated_compressed.mp4`}/>
+        <video width = {780} height = {120} loop autoPlay muted playsInline src = {`${CLOUDFRONT_DISTRO}/vid/headerAnimated_compressed.mp4`}/>
     </header>
 }
