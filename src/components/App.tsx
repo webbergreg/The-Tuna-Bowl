@@ -17,6 +17,7 @@ export const App = () =>{
       <Router>
         <Routes>
           <Route path = '/2021/*' element = {<Season2021/>}/>
+          <Route path = '/' element = {<Season2021/>}/>
         </Routes>
       </Router>
 
