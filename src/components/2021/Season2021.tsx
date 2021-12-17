@@ -12,11 +12,15 @@ import { Week9 } from './Week9';
 import { Week10 } from './Week10';
 import { Week11 } from './Week11';
 import { Week12 } from './Week12';
+import { Week13 } from './Week13';
+import { Week14 } from './Week14';
 import { Nav } from '../Nav';
 
 export const Season2021 = ()=>{
     return <>
         <Nav/>
+        <Week14/>
+        <Week13/>
         <Week12/>
         <Week11/>
         <Week10/>
