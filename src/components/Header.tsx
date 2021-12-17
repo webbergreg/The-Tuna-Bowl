@@ -5,6 +5,7 @@ import trophy from '../img/trophy.gif';
 import LazyImg from './LazyImg';
 
 import '../css/Header.css';
+import { CLOUDFRONT_DISTRO } from '../constants';
 
 export const Header = ()=>{
 
@@ -15,6 +16,6 @@ export const Header = ()=>{
             <LazyImg alt = 'NFL logo' src = {nfl}/>  
             <LazyImg alt = 'Trophy' src = {trophy}/>
         </div>
-        <video width = {780} height = {120} loop autoPlay muted src = {`${process.env.PUBLIC_URL}/headerAnimated_compressed.mp4`}/>
+        <video width = {780} height = {120} loop autoPlay muted src = {`${CLOUDFRONT_DISTRO}/vid/headerAnimated_compressed.mp4`}/>
     </header>
 }
