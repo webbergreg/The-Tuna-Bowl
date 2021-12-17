@@ -19,7 +19,7 @@ export const Week2 = ()=>{
         <p>Moran and Webber head to head going into the Monday nighter. Scores are close. Moran has Adams and Crosby vs Greg’s Swift. Moran is already 0-2 and collapsing on the season. Proceeds to lose 98.76 - 99.42 to Greg. Loses 98.76 – 104.67 to the Median. Yikes… Which sets up this exchange..</p>
         <LazyImg alt = 'Moran vs. the Median' src = {moran}/>
         <p>And Greg’s response..</p>
-        <video src = {`${process.env.PUBLIC_URL}/vid/red.mp4`} loop controls width = {640} height = {360}/>
+        <video src = {`${process.env.PUBLIC_URL}/red.mp4`} loop controls width = {640} height = {360}/>
         <p>Well done Greg. Love it. Week 3’s kickin off and we’ve got some action! 4-0 NPC vs the 4-0 Rondinko’s is lookin’ like the Marquee Matchup of the week but I’m more excited about Murdered by the Median’s chances at a win. Projected to beat the lowly 1-3 Rippers 127 to 117 with the median projected at 121. No stress Moran, you got this!</p>
     </Recap>
 }
