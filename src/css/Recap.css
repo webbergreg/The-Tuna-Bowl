@@ -259,7 +259,8 @@
 /* Style 13 */
 .recap-style-13 h2{
   font-family:'University';
-  color:black;
+  color:yellow;
+  font-size:32px;
   background: linear-gradient(-45deg, rgb(104, 3, 3), #4ae73c, #d52391, #d5cf23);
   background-size: 400% 400%;
   animation: gradient 1s ease infinite;
@@ -273,8 +274,8 @@
 /* Style 14 */
 .recap-style-14 h2{
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  color:lawngreen;
-  text-shadow: 4px 4px black, -4px -4px orangered;;
+  color:lime;
+  text-shadow: 4px 4px black, -4px -4px purple;;
   background-color: #e5e5f7;
   opacity: 0.8;
   background-image:  repeating-linear-gradient(45deg, red 25%, transparent 25%, transparent 75%, blue 75%, red), repeating-linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%, #e5e5f7 75%, pink 75%, #444cf7);
