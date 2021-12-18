@@ -20,6 +20,10 @@
   line-height:17px;
 }
 
+.Recap h2{
+  margin-bottom:10px;
+}
+
 .recap-wrapper{
   padding:10px;
 }
@@ -38,7 +42,6 @@
 .Recap h3{
   padding-left:40px;
   background-image:url('/src/img/fgif2.gif');
-  filter:blur(0.5px);
   background-size:36px 30px;
   background-repeat:no-repeat;
   background-position:center left;
@@ -74,6 +77,12 @@
   left:5px;
 }
 
+.btn-recap-info{
+  position:absolute;
+  top:100px;
+  right:5px;
+}
+
 @media screen and (min-width: 768px) {
 
   .Recap{
@@ -92,7 +101,7 @@
     padding:20px;
   }
 
-  .btn-recap-back{
+  .btn-recap-back, .btn-recap-info{
     top:180px;
   }
 }
@@ -101,7 +110,6 @@
 .recap-style-1 h2{
   background:#ff6d1a;
   font-family: 'Redneck';
-  filter:blur(0.5px);
   color:#000525;
 }
 
