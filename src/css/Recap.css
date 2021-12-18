@@ -33,12 +33,6 @@
   max-width:500px;
 }
 
-.recap-wrapper img.inline{
-  display: inline-block;
-  width:unset;
-  max-width:500px;
-}
-
 .Recap h3{
   padding-left:40px;
   background-image:url('/src/img/fgif2.gif');
@@ -91,7 +85,7 @@
     margin:0 auto;
     padding-top:114px;
   }
-
+  
   .Recap p{
     font-size:16px;
     line-height:20px;
@@ -99,6 +93,12 @@
 
   .recap-wrapper{
     padding:20px;
+  }
+
+  .recap-wrapper img.inline{
+    display: inline-block;
+    width:unset;
+    max-width:500px;
   }
 
   .btn-recap-back, .btn-recap-info{
