@@ -17,6 +17,10 @@
   display: none;
 }
 
+.App-header .icon-set-right{
+  display: none;
+}
+
 .App-header video{
   width:312px;
   height:48px;
@@ -35,5 +39,12 @@
   .App-header video{
     width:720px;
     height:120px;
+  }
+}
+
+@media screen and (min-width:1300px) {
+
+  .App-header .icon-set-right{
+    display: block;
   }
 }
