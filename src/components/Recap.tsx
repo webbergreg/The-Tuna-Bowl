@@ -13,8 +13,9 @@ interface IRecapProps{
   children:any;
   title:any;
   weekInt?:number;
+  hideInfo?:boolean;
 }
-export const Recap = ({title, children, weekInt} :IRecapProps) => {
+export const Recap = ({title, children, weekInt, hideInfo} :IRecapProps) => {
 
   const {seasonKey} = useContext(SeasonContext);
   const [showInfo, setShowInfo] = useState(true);
@@ -43,9 +44,9 @@ export const Recap = ({title, children, weekInt} :IRecapProps) => {
   return (
     <section id = {`recap-${weekInt}`} className={`Recap recap-style-${weekInt}`}>
       <h2>{title}</h2>
-      <WeeklyLeagueInfo show = {showInfo} weekInt = {weekInt}/>
+      {!hideInfo && <WeeklyLeagueInfo show = {showInfo} weekInt = {weekInt}/>}
       {btnBack}
-      {btnShowInfo}
+      {!hideInfo && btnShowInfo}
       <div className = 'recap-wrapper'>
         {children}
         <br/>
