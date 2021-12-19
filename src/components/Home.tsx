@@ -11,7 +11,7 @@ export const Home = ()=>{
         <div className = 'hero'>
             <img className = 'hero-image' src = {ttb} alt = 'The Tuna Bowl'/>
             <div className = 'hero-nav'>
-                <h2>Seasons</h2>
+                <h2>Season Menu:</h2>
                 <a href = '/2021'>
                     {HEADER_2021}
                 </a>
