@@ -2,6 +2,7 @@ import '../css/App.css';
 import { createContext } from 'react';
 import { Season2021 } from './2021/Season2021';
 import { Header } from './Header';
+import { Menu } from './Menu';
 import {
   BrowserRouter as Router,
   Routes,
@@ -15,6 +16,7 @@ export const App = () =>{
     <div className="App">
 
       <Header/>
+      <Menu/>
 
       <Router>
         <Routes>

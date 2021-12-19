@@ -8,7 +8,7 @@
   justify-content: center;
   align-items:center;
   background:#b02153;
-  z-index:1000;
+  z-index:2000;
   border-bottom:4px solid #31aed8;
   box-sizing: border-box;
 }
@@ -22,7 +22,7 @@
 }
 
 .App-header video{
-  width:312px;
+  width:280px;
   height:48px;
 }
 

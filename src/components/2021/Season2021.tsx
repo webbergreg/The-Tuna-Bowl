@@ -32,6 +32,15 @@ import { Nav } from '../Nav';
 import { SeasonContext } from '../App';
 import { Week0 } from './Week0';
 
+export const HEADER_2021 = <h2 className = 'Season-title'>
+    <img src = {fgif2} alt = 'football'/>
+    <img src = {img2} alt = '2'/>
+    <img src = {img0} alt = '0'/>
+    <img src = {img2} alt = '2'/>
+    <img src = {img1} alt = '1'/>
+    <img src = {fgif2} alt = 'football'/>
+</h2>;
+
 export const Season2021 = ()=>{
 
     const SEASON_KEY = '2021';
@@ -41,14 +50,7 @@ export const Season2021 = ()=>{
     </div>;
 
     const season = <section id = {`season-${SEASON_KEY}`} className={`Season`}>
-        <h2 className = 'Season-title'>
-            <img src = {fgif2} alt = 'football'/>
-            <img src = {img2} alt = '2'/>
-            <img src = {img0} alt = '0'/>
-            <img src = {img2} alt = '2'/>
-            <img src = {img1} alt = '1'/>
-            <img src = {fgif2} alt = 'football'/>
-        </h2>
+        {HEADER_2021}
         <h3 className = 'Season-recap-title'>
             <img src = {football_4} alt = 'Turkey'/>
             <div>Recaps</div>
