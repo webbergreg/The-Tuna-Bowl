@@ -129,7 +129,7 @@
 
 .recap-style-2 h3{
   color:#26150a;
-  font-family: 'sportday';
+  font-family: 'Sport-Day-Bold';
 }
 
 /* Style 3 */
@@ -160,7 +160,7 @@
 
 /* Style 5 */
 .recap-style-5 h2{
-  font-family:'sportday';
+  font-family:'Sport-Day-Bold';
   background: linear-gradient(-45deg, maroon, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 1s ease infinite;
@@ -193,7 +193,7 @@
 
 .recap-style-7 h3{
   color:pink;
-  font-family: 'sportday';
+  font-family: 'Sport-Day-Bold';
 }
 
 /* Style 8 */
@@ -205,7 +205,7 @@
 
 .recap-style-8 h3{
   color:pink;
-  font-family: 'sportday';
+  font-family: 'Sport-Day-Bold';
 }
 
 /* Style 9 */
@@ -246,7 +246,7 @@
 
 /* Style 12 */
 .recap-style-12 h2{
-  font-family:'sportday';
+  font-family:'Sport-Day-Bold';
   color:white;
   background:purple;
 }
