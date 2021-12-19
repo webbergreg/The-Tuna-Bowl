@@ -20,6 +20,7 @@
   }
 
   .btn-show-menu{
+      cursor: pointer;
       position:fixed;
       z-index:3000;
       top:18px;

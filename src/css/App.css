@@ -47,6 +47,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+a{
+  cursor: pointer;
+}
+
 ul{
   list-style-type: square;
 }

@@ -54,6 +54,7 @@
 };
 
 .btn-recap-nav{
+  cursor: pointer;
   transition:filter 200ms ease-out;
 }
 
@@ -71,12 +72,14 @@
 }
 
 .btn-recap-back{
+  cursor: pointer;
   position:absolute;
   top:100px;
   left:5px;
 }
 
 .btn-recap-info{
+  cursor: pointer;
   position:absolute;
   top:100px;
   right:5px;
@@ -107,6 +110,7 @@
   }
 
   .btn-recap-back, .btn-recap-info{
+    cursor: pointer;
     top:180px;
   }
 }

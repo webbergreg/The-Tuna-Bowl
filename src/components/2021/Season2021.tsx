@@ -22,6 +22,8 @@ import divider1 from '../../img/divider1.gif';
 import champ from '../../img/champ.gif';
 import minnow from '../../img/minnow.gif';
 import construction from '../../img/construction.gif';
+import minnowLouie from '../../img/minnow-2021.jpg';
+
 import '../../css/Season.css';
 
 import {
@@ -70,7 +72,7 @@ export const Season2021 = ()=>{
                 <h4>
                     <img src = {minnow} alt = 'Minnow'/>
                 </h4>
-                {placeholder}
+                <img src = {minnowLouie} alt = 'Louie'/>
             </div>
         </div>
     </section>

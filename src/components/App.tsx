@@ -3,6 +3,8 @@ import { createContext } from 'react';
 import { Season2021 } from './2021/Season2021';
 import { Header } from './Header';
 import { Menu } from './Menu';
+import { Home } from './Home';
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -20,8 +22,8 @@ export const App = () =>{
 
       <Router>
         <Routes>
+          <Route path = '/' element = {<Home/>}/>
           <Route path = '/2021/*' element = {<Season2021/>}/>
-          <Route path = '/' element = {<Season2021/>}/>
         </Routes>
       </Router>
 
