@@ -33,6 +33,11 @@
   max-width:500px;
 }
 
+.recap-wrapper img.fullw{
+  width:100%;
+  max-width:unset;
+}
+
 .Recap h3{
   padding-left:40px;
   background-image:url('/src/img/fgif2.gif');
@@ -106,6 +111,11 @@
   }
 }
 
+.recap-style-0 h2{
+  padding-top:5px;
+  background:#73c3a6;
+  font-family:'Sport-Day-Bold';
+}
 /* Style 1 */
 .recap-style-1 h2{
   background:#ff6d1a;
