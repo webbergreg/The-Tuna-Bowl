@@ -2,6 +2,8 @@ import '../css/Home.css';
 import ttb from '../img/ttb.jpg';
 import welcome from '../img/welcome.gif';
 import football from '../img/football_6.gif';
+import clickhere1 from '../img/clickhere1.gif';
+import clickhere2 from '../img/clickhere2.gif';
 import { HEADER_2021 } from './2021/Season2021';
 
 export const Home = ()=>{
@@ -11,9 +13,11 @@ export const Home = ()=>{
         <div className = 'hero'>
             <img className = 'hero-image' src = {ttb} alt = 'The Tuna Bowl'/>
             <div className = 'hero-nav'>
-                <h2>Season Menu:</h2>
+                <h2>Current Season:</h2>
                 <a href = '/2021'>
+                    <img className = 'clickhere' src = {clickhere1} alt = 'Click Here'/>
                     {HEADER_2021}
+                    <img className = 'clickhere' src = {clickhere2} alt = 'Click Here'/>
                 </a>
             </div>
         </div>

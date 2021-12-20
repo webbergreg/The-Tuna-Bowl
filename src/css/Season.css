@@ -5,6 +5,9 @@
     padding-top:34px;
     padding-bottom:30px;
     box-sizing: border-box;
+    background-color: #e5e5f7;
+    background-size: 20px 20px;
+    background-image:  repeating-linear-gradient(0deg, #bfc2f5, #bfc2f5 1px, #e5e5f7 1px, #e5e5f7);
 }
 
 .Season-title{
