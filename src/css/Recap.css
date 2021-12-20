@@ -85,13 +85,22 @@
   right:5px;
 }
 
+@media screen and (min-width: 1024px){
+  .Recap{
+    padding-top:114px;
+  }
+  .btn-recap-back, .btn-recap-info{
+    cursor: pointer;
+    top:180px;
+  }
+}
+
 @media screen and (min-width: 768px) {
 
   .Recap{
     width:100%;
     max-width:800px;
     margin:0 auto;
-    padding-top:114px;
   }
   
   .Recap p{
@@ -107,11 +116,6 @@
     display: inline-block;
     width:unset;
     max-width:500px;
-  }
-
-  .btn-recap-back, .btn-recap-info{
-    cursor: pointer;
-    top:180px;
   }
 }
 
@@ -301,6 +305,25 @@
   color:peru;
   font-family: 'Franchise';
 }
+
+/* Coming Soon */
+.coming-soon-header{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:red;
+  background-color: yellow;
+  background: repeating-linear-gradient( 45deg, black, black 5px, yellow 5px, yellow 10px );
+  margin-top:-20px;
+  padding:20px;
+  box-sizing: border-box;
+}
+
+.coming-soon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 
 @keyframes gradient {
   0% {

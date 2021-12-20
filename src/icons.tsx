@@ -14,6 +14,7 @@ import img11 from './img/numbers/11.gif';
 import img12 from './img/numbers/12.gif';
 import img13 from './img/numbers/13.gif';
 import img14 from './img/numbers/14.gif';
+import rd1 from './img/numbers/rd1.gif';
 
 export const WEEK_MARKERS = {
     WEEK0:<img alt = 'Draft' src = {draft}/>,
@@ -31,7 +32,7 @@ export const WEEK_MARKERS = {
     WEEK12:<img alt = 'Nav 12' src = {img12}/>,
     WEEK13:<img alt = 'Nav 13' src = {img13}/>,
     WEEK14:<img alt = 'Nav 14' src = {img14}/>,
-    Week15:'Q',
-    Week16:'S',
+    WEEK15:<img alt = 'Nav 15' src = {rd1}/>,
+    WEEK16:'R2',
     WEEK17:<img alt = 'Draft' src = {trophy_2}/>,
 }

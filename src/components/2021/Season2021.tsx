@@ -31,6 +31,7 @@ import {
     Route,
   } from "react-router-dom";
 import { Nav } from '../Nav';
+import { WeekComingSoon } from '../WeekComingSoon';
 import { SeasonContext } from '../App';
 import { Week0 } from './Week0';
 
@@ -95,6 +96,9 @@ export const Season2021 = ()=>{
             <Route path = '/week-12' element = {<Week12/>}/>
             <Route path = '/week-13' element = {<Week13/>}/>
             <Route path = '/week-14' element = {<Week14/>}/>
+            <Route path = '/week-15' element = {<WeekComingSoon weekInt = {15}/>}/>
+            <Route path = '/week-16' element = {<WeekComingSoon weekInt = {16}/>}/>
+            <Route path = '/week-17' element = {<WeekComingSoon weekInt = {17}/>}/>
         </Routes>
     </SeasonContext.Provider>
 }

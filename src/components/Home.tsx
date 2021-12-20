@@ -1,6 +1,6 @@
 import '../css/Home.css';
 import ttb from '../img/ttb.jpg';
-import welcome from '../img/welcome.gif';
+import fishwelcome from '../img/fishwelcome.gif';
 import football from '../img/football_6.gif';
 import clickhere1 from '../img/clickhere1.gif';
 import clickhere2 from '../img/clickhere2.gif';
@@ -8,7 +8,7 @@ import { HEADER_2021 } from './2021/Season2021';
 
 export const Home = ()=>{
     return <section className = 'Home'>
-        <img className = 'welcome' src = {welcome} alt = 'Welcome'/>
+        <img className = 'welcome' src = {fishwelcome} alt = 'Welcome'/>
         <img src = {football} alt = 'Football'/>
         <div className = 'hero'>
             <img className = 'hero-image' src = {ttb} alt = 'The Tuna Bowl'/>

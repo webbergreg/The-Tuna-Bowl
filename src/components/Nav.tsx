@@ -23,5 +23,6 @@ export const Nav = ()=>{
         <a href = {`/${seasonKey}/week-12`}>{WEEK_MARKERS.WEEK12}</a>
         <a href = {`/${seasonKey}/week-13`}>{WEEK_MARKERS.WEEK13}</a>
         <a href = {`/${seasonKey}/week-14`}>{WEEK_MARKERS.WEEK14}</a>
+        <a href = {`/${seasonKey}/week-15`}>{WEEK_MARKERS.WEEK15}</a>
     </nav>
 }
