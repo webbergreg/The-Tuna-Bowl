@@ -48,6 +48,6 @@ export const Team =({team, winner, side}) =>{
             <div className = 'user'>{`@${team?.user?.display_name}`}</div>
             <div className = 'team'>{team?.user?.metadata?.team_name || `Team ${team?.user?.display_name}`}</div>
         </div>
-        <div className = 'score'>{team?.points}</div>
+        <div className = 'score'>{team?.points.toFixed(2)}</div>
     </div>
 }
