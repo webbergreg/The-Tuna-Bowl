@@ -8,7 +8,7 @@ const API_BASE_URL = 'https://api.sleeper.app/v1/';
 const LEAGUE_ID = '718535437227999232';
 const PLAYERS_IN_LEAGUE = 12;
 const myArgs = process.argv.slice(2);
-const WEEK = myArgs[0];
+const YEAR = myArgs[0];
 
 function getSleeperData(url){
 
@@ -24,16 +24,7 @@ function getSleeperData(url){
     });
 }
 
-async function scrapeSleeper(week){
-
-    let games = [
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
-    ];
+async function scrapeSleeper(){
 
     console.log(`----- Get League ${LEAGUE_ID} Users`);
     const users = await getSleeperData(`${API_BASE_URL}/league/${LEAGUE_ID}/users`);
@@ -47,50 +38,43 @@ async function scrapeSleeper(week){
     const bracket = await getSleeperData(`${API_BASE_URL}/league/${LEAGUE_ID}/winners_bracket`);
     console.log(`----- Got Playoff Bracket`);
 
-    console.log(bracket);
+    //go through each entry in the bracket, and splice in the user + roster information
+    for(let matchup of bracket){
 
-    // for(let t = 0; t<matchups.length; t++){
+        //splice in the player 1 data
+        const r1 = rosters.find((r)=>{
+            return r.roster_id === matchup.t1;
+        }) || null;
 
-    //     const matchup = matchups[t];
+        matchup.t1_roster = r1;
 
-    //     //splice in the correct roster & user
-    //     const roster = rosters.find((r)=>{
-    //         return r.roster_id === matchup.roster_id;
-    //     })
-    //     const user = users.find((u)=>{
-    //         return u.user_id === roster.owner_id
-    //     });
+        const u1 = (r1 !== null) ? users.find((r)=>{
+            return r.user_id === r1.owner_id;
+        }) : null;
 
-    //     const avatarPath = `../public/avatars/${user.avatar}.png`;
-    //     const avatarUrl = `https://sleepercdn.com/avatars/thumbs/${user.avatar}`;
-
-    //     try {
-    //         if (fs.existsSync(avatarPath)) {
-
-    //         }else{
-    //             console.log(`Download avatar: ${user.avatar}`);
-    //             await download(avatarUrl, avatarPath);
-    //             console.log(`Download complete`);
-    //         }
-    //     } catch(err) {
-            
-    //     }
+        matchup.t1_roster = r1 || null;
+        matchup.t1_owner = u1 || null;
         
-    //     matchup.roster = roster;
-    //     matchup.user = user;
+        //splice in the player 2 data
+        const r2 = rosters.find((r)=>{
+            return r.roster_id === matchup.t2;
+        }) || null;
 
-    //     //put into the proper game
-    //     games[matchup.matchup_id - 1].push(matchup);
-    // }
+        matchup.t2_roster = r2;
 
-    //write the info to a file
-    // let data = JSON.stringify(games);
+        const u2 = (r2 !== null) ? users.find((r)=>{
+            return r.user_id === r1.owner_id;
+        }) : null;
 
-    // const dataPath = `../public/data/week-${week}-matchups.json`;
+        matchup.t2_roster = r2 || null;
+        matchup.t2_owner = u2 || null;
+    }
 
-    // console.log(`----- Writing data file: ${dataPath}`);
-    // fs.writeFileSync(dataPath, data);
-    // console.log('----- Write Complete');
+    const dataPath = `../public/data/${YEAR}-playoffs.json`;
+    let data = JSON.stringify(bracket);
+    console.log(`----- Writing data file: ${dataPath}`);
+    fs.writeFileSync(dataPath, data);
+    console.log('----- Write Complete');
 }
 
 const download = function(uri, filename){
@@ -105,4 +89,4 @@ const download = function(uri, filename){
     });
 };
 
-scrapeSleeper(WEEK);
+scrapeSleeper();
