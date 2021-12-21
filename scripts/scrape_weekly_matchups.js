@@ -62,25 +62,7 @@ async function scrapeSleeper(week){
             return u.user_id === roster.owner_id
         });
 
-        //download the user avatar, at this point in time
-        const userAvatarFilename = `${YEAR}-${WEEK}-${user.avatar}.png`;
-        const avatarPath = `../public/avatars/${userAvatarFilename}`;
-        const avatarUrl = `https://sleepercdn.com/avatars/thumbs/${user.avatar}`;
-
-        try {
-            if (fs.existsSync(avatarPath)) {
-
-            }else{
-                console.log(`Download user avatar: ${user.avatar}`);
-                await download(avatarUrl, avatarPath);
-                console.log(`Download complete`);
-            }
-        } catch(err) {
-            
-        }
-        user.avatar = userAvatarFilename;
-
-        //download the roster avatar, at this point in time
+        //If there is a metadata avatar (roster avatar) download that and set the path in the data
         const metaAvatarUrl = user?.metadata?.avatar;
         if(metaAvatarUrl){
 
@@ -92,7 +74,7 @@ async function scrapeSleeper(week){
                 ext = 'png';
             }
             
-            const userMetaAvatarFilename = `${YEAR}-${WEEK}-${file}.${ext}`;
+            const userMetaAvatarFilename = `${file}.${ext}`;
             const metaAvatarPath = `../public/avatars/${userMetaAvatarFilename}`;
             
             try {
@@ -106,7 +88,28 @@ async function scrapeSleeper(week){
             } catch(err) {
                 
             }
-            user.metadata.avatar = userMetaAvatarFilename;
+            user.avatar = userMetaAvatarFilename;
+
+        //If there is no metadata avatar (roster avatar) use the user avatar
+        }else{
+
+            //download the user avatar, at this point in time
+            const userAvatarFilename = `${user.avatar}.png`;
+            const avatarPath = `../public/avatars/${userAvatarFilename}`;
+            const avatarUrl = `https://sleepercdn.com/avatars/thumbs/${user.avatar}`;
+
+            try {
+                if (fs.existsSync(avatarPath)) {
+
+                }else{
+                    console.log(`Download user avatar: ${user.avatar}`);
+                    await download(avatarUrl, avatarPath);
+                    console.log(`Download complete`);
+                }
+            } catch(err) {
+                
+            }
+            user.avatar = userAvatarFilename;
         }
         
         matchup.roster = roster;

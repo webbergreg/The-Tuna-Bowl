@@ -39,8 +39,7 @@ export const Matchup =({matchup}) =>{
 export const Team =({team, winner, side}) =>{
 
     const winClass = (winner) ? 'winner' : 'loser';
-
-    const avatar = (team.user.metadata.avatar) ? team.user.metadata.avatar : team.user.avatar;
+    const avatar = team?.user?.avatar;
     
     return <div className = {`WeeklyLeagueInfo-Team ${winClass} ${side}`}>
         <div className = 'team-info'>
