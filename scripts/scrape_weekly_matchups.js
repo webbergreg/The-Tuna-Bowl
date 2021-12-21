@@ -1,8 +1,7 @@
 'use strict';
 
-const axios = require('axios');
 const fs = require('fs');
-const request = require('request');
+const util = require('./util');
 
 const API_BASE_URL = 'https://api.sleeper.app/v1/';
 const LEAGUE_ID = '718535437227999232';
@@ -10,20 +9,6 @@ const PLAYERS_IN_LEAGUE = 12;
 const myArgs = process.argv.slice(2);
 const YEAR = myArgs[0]
 const WEEK = myArgs[1];
-
-function getSleeperData(url){
-
-    return new Promise((resolve, reject)=>{
-
-        axios.get(url).then((res)=>{
-            resolve(res.data);
-        }).catch((e)=>{
-            console.log('API ERROR');
-            console.log(e);
-            reject(e);
-        })
-    });
-}
 
 async function scrapeSleeper(week){
 
@@ -37,17 +22,17 @@ async function scrapeSleeper(week){
     ];
 
     console.log(`----- Get League ${LEAGUE_ID} Users`);
-    const users = await getSleeperData(`${API_BASE_URL}/league/${LEAGUE_ID}/users`);
+    const users = await util.getSleeperData(`${API_BASE_URL}/league/${LEAGUE_ID}/users`);
     console.log(`----- Got Users`);
 
     console.log(`----- Getting League ${LEAGUE_ID} Rosters`);
-    const rosters = await getSleeperData(`${API_BASE_URL}/league/${LEAGUE_ID}/rosters`);
+    const rosters = await util.getSleeperData(`${API_BASE_URL}/league/${LEAGUE_ID}/rosters`);
     console.log(`----- Got Rosters`);
     
     //go through each team in the weekly matchups and pair them into games
 
     console.log(`----- Get League ${LEAGUE_ID} Week ${week} Matchups`);
-    const matchups = await getSleeperData(`${API_BASE_URL}/league/${LEAGUE_ID}/matchups/${week}`);
+    const matchups = await util.getSleeperData(`${API_BASE_URL}/league/${LEAGUE_ID}/matchups/${week}`);
     console.log(`----- Got Matchups`);
 
     for(let t = 0; t<matchups.length; t++){
@@ -58,60 +43,12 @@ async function scrapeSleeper(week){
         const roster = rosters.find((r)=>{
             return r.roster_id === matchup.roster_id;
         })
-        const user = users.find((u)=>{
+        let user = users.find((u)=>{
             return u.user_id === roster.owner_id
         });
 
-        //If there is a metadata avatar (roster avatar) download that and set the path in the data
-        const metaAvatarUrl = user?.metadata?.avatar;
-        if(metaAvatarUrl){
+        user = await util.transformUserAvatar(user);
 
-            const urlPieces = metaAvatarUrl.split('/');
-            const fileName = urlPieces[urlPieces.length-1];
-            let file = fileName.split('.')[0];
-            let ext = fileName.split('.')[1];
-            if(!ext){
-                ext = 'png';
-            }
-            
-            const userMetaAvatarFilename = `${file}.${ext}`;
-            const metaAvatarPath = `../public/avatars/${userMetaAvatarFilename}`;
-            
-            try {
-                if (fs.existsSync(metaAvatarPath)) {
-                    
-                }else{
-                    console.log(`Download user metadata avatar: ${metaAvatarUrl}`);
-                    await download(metaAvatarUrl, metaAvatarPath);
-                    console.log(`Download complete`);
-                }
-            } catch(err) {
-                
-            }
-            user.avatar = userMetaAvatarFilename;
-
-        //If there is no metadata avatar (roster avatar) use the user avatar
-        }else{
-
-            //download the user avatar, at this point in time
-            const userAvatarFilename = `${user.avatar}.png`;
-            const avatarPath = `../public/avatars/${userAvatarFilename}`;
-            const avatarUrl = `https://sleepercdn.com/avatars/thumbs/${user.avatar}`;
-
-            try {
-                if (fs.existsSync(avatarPath)) {
-
-                }else{
-                    console.log(`Download user avatar: ${user.avatar}`);
-                    await download(avatarUrl, avatarPath);
-                    console.log(`Download complete`);
-                }
-            } catch(err) {
-                
-            }
-            user.avatar = userAvatarFilename;
-        }
-        
         matchup.roster = roster;
         matchup.user = user;
 
@@ -128,17 +65,5 @@ async function scrapeSleeper(week){
     fs.writeFileSync(dataPath, data);
     console.log('----- Write Complete');
 }
-
-const download = function(uri, filename){
-
-    return new Promise((resolve, reject)=>{
-        
-        request.head(uri, function(err, res, body){
-            request(uri).pipe(fs.createWriteStream(filename)).on('close', ()=>{
-                resolve();
-            });
-        });
-    });
-};
 
 scrapeSleeper(WEEK);

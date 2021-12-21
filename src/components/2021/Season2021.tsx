@@ -34,6 +34,7 @@ import { Nav } from '../Nav';
 import { WeekComingSoon } from '../WeekComingSoon';
 import { SeasonContext } from '../App';
 import { Week0 } from './Week0';
+import { PlayoffBracket } from '../PlayoffBracket';
 
 export const HEADER_2021 = <h2 className = 'Season-title'>
     <img src = {fgif2} alt = 'football'/>
@@ -62,6 +63,7 @@ export const Season2021 = ()=>{
         <img className = 'rule' src = {divider1} alt = 'divider'/>
         <Nav/>
         <img className = 'rule' src = {divider1} alt = 'divider'/>
+        <PlayoffBracket/>
         <div className = 'Season-results'>
             <div id = 'champ' className = 'Season-results-section'>
                 <h4>
