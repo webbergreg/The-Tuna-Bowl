@@ -32,8 +32,6 @@ async function scrapeSleeper(){
             return r.roster_id === matchup.t1;
         }) || null;
 
-        matchup.t1_roster = r1;
-
         let u1 = (r1 !== null) ? users.find((r)=>{
             return r.user_id === r1.owner_id;
         }) : null;
@@ -42,7 +40,6 @@ async function scrapeSleeper(){
             u1 = await util.transformUserAvatar(u1);
         }
 
-        matchup.t1_roster = r1 || null;
         matchup.t1_owner = u1 || null;
         
         //splice in the player 2 data
@@ -50,17 +47,14 @@ async function scrapeSleeper(){
             return r.roster_id === matchup.t2;
         }) || null;
 
-        matchup.t2_roster = r2;
-
         let u2 = (r2 !== null) ? users.find((r)=>{
-            return r.user_id === r1.owner_id;
+            return r.user_id === r2.owner_id;
         }) : null;
 
         if(u2){
             u2 = await util.transformUserAvatar(u2);
         }
 
-        matchup.t2_roster = r2 || null;
         matchup.t2_owner = u2 || null;
     }
 

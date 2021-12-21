@@ -1,0 +1,129 @@
+
+
+.PlayoffBracket{
+    width:100%;
+}
+
+.PlayoffBracket-Matchup{
+    width:170px;
+    display: flex;
+    flex-direction: column;
+    border:2px solid black;
+}
+
+.PlayoffBracket-Round{
+    display: flex;
+    justify-content: space-around;
+}
+
+.PlayoffBracket-Team{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:4px;
+    background-color: #f5f5f5;
+    position:relative;
+}
+
+.PlayoffBracket-Team .team-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.PlayoffBracket-Team .user{
+    font-size:8px;
+}
+
+.PlayoffBracket-Team .team{
+    font-size:10px;
+}
+
+.PlayoffBracket-Team .owner-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:5px;
+}
+
+.PlayoffBracket-Team .score{
+    font-family:'Sport-Day-Bold';
+    font-size:20px;
+}
+
+.PlayoffBracket-Team .avatar{
+    background:#293042;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    overflow:hidden;
+    box-sizing: border-box;
+    position:relative;
+}
+
+.PlayoffBracket-Team .avatar img{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height:100%;
+}
+
+.PlayoffBracket-Team.alt{
+    background-color: #ebe6e6;
+}
+
+.PlayoffBracket .round-divider{
+    height:30px;
+    width:100%;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+
+.PlayoffBracket-Team.loser .owner-info{
+    opacity:0.6;
+}
+
+.PlayoffBracket-Team.winner .avatar{
+    border:3px solid #21b050;
+}
+
+
+.PlayoffBracket .round-divider.r1{
+    background-image:url('../img/bracket-r1.png');
+}
+
+.PlayoffBracket .round-divider.r2{
+    background-image:url('../img/bracket-r2.png');
+}
+
+.PlayoffBracket .round-divider.r3{
+    background-image:url('../img/bracket-r3.png');
+}
+
+@media screen and (min-width: 768px) {
+
+    .PlayoffBracket{
+        width:70%;
+    }
+
+    .PlayoffBracket-Matchup{
+        width:275px;
+    }
+
+    .PlayoffBracket-Team .avatar{
+        width:55px;
+        height:55px;   
+    }
+
+    .PlayoffBracket-Team .user{
+        font-size:12px;
+    }
+
+    .PlayoffBracket-Team .team{
+        font-size:15px;
+    }
+
+    .PlayoffBracket-Team .score{
+        font-size:22px;
+    }
+}

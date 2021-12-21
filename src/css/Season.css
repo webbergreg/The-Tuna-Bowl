@@ -41,10 +41,11 @@
 }
 
 .Season-results{
-    margin-top:60px;
+    margin-top:20px;
     width:100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .Season-results-section{
@@ -65,14 +66,33 @@
     height:50px;
 }
 
-.placeholder{
-    width:300px;
-    height:300px;
+.Season-results-section .placeholder{
+    width:170px;
+    height:170px;
     background:#f5f5f5;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border:2px solid black;
+}
+
+.Season-results-section .user-image{
+    width:170px;
+    height:170px;
+}
+
+.Season-results-section .user-image{
+    border:2px solid black;
+}
+
+#minnow{
+    margin-top:40px;
+}
+
+#minnow .user-image{
+    width:100px;
+    height:100px;
 }
 
 .placeholder img{
@@ -81,6 +101,16 @@
 
 @media screen and (min-width: 768px) {
 
+    #minnow .user-image{
+        width:150px;
+        height:150px;
+    }
+
+    .Season-results-section .placeholder, .Season-results-section .user-image{
+        width:275px;
+        height:275px;
+    }
+
     .Season{
         padding-top: 114px;
         margin:0 auto;
@@ -88,13 +118,5 @@
 
     .Season-recap-title{
         font-size:64px;
-    }
-
-    .Season-results{
-        flex-direction: row;
-    }
-
-    .Season-results-section{
-        width:50%;
     }
 }

@@ -63,7 +63,6 @@ export const Season2021 = ()=>{
         <img className = 'rule' src = {divider1} alt = 'divider'/>
         <Nav/>
         <img className = 'rule' src = {divider1} alt = 'divider'/>
-        <PlayoffBracket/>
         <div className = 'Season-results'>
             <div id = 'champ' className = 'Season-results-section'>
                 <h4>
@@ -71,11 +70,12 @@ export const Season2021 = ()=>{
                 </h4>
                 {placeholder}
             </div>
+            <PlayoffBracket/>
             <div id = 'minnow' className = 'Season-results-section'>
                 <h4>
                     <img src = {minnow} alt = 'Minnow'/>
                 </h4>
-                <img src = {minnowLouie} alt = 'Louie'/>
+                <img className = 'user-image' src = {minnowLouie} alt = 'Louie'/>
             </div>
         </div>
     </section>
