@@ -122,7 +122,7 @@ async function scrapeSleeper(week){
     //write the info to a file
     let data = JSON.stringify(games);
 
-    const dataPath = `../public/data/week-${week}-matchups.json`;
+    const dataPath = `../public/data/${YEAR}-${week}-matchups.json`;
 
     console.log(`----- Writing data file: ${dataPath}`);
     fs.writeFileSync(dataPath, data);

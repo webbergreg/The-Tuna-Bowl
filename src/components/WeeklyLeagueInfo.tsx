@@ -2,12 +2,15 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../css/WeeklyLeagueinfo.css';
+import {useContext} from 'react';
+import { SeasonContext } from './App';
 
 export const WeeklyLeagueInfo = ({show, weekInt})=>{
 
+    const {seasonKey} = useContext(SeasonContext);
     const [matchups, setMatchups] = useState([]);
     useEffect(()=>{
-        axios.get(`${process.env.PUBLIC_URL}/data/week-${weekInt}-matchups.json`).then((res)=>{
+        axios.get(`${process.env.PUBLIC_URL}/data/${seasonKey}-${weekInt}-matchups.json`).then((res)=>{
             setMatchups(res.data);
         })
     }, [weekInt]);
