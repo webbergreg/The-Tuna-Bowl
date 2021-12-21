@@ -39,11 +39,13 @@ export const Matchup =({matchup}) =>{
 export const Team =({team, winner, side}) =>{
 
     const winClass = (winner) ? 'winner' : 'loser';
-    const avatarUrl = (team?.user?.metadata?.avatar) ? team.user.metadata.avatar : `${process.env.PUBLIC_URL}/avatars/${team?.user?.avatar}.png`;
+
+    const avatar = (team.user.metadata.avatar) ? team.user.metadata.avatar : team.user.avatar;
+    
     return <div className = {`WeeklyLeagueInfo-Team ${winClass} ${side}`}>
         <div className = 'team-info'>
             <div className = 'avatar'>
-                <img src = {avatarUrl} alt = 'Team Avatar'/>
+                <img src = {`${process.env.PUBLIC_URL}/avatars/${avatar}`} alt = 'Team Avatar'/> 
             </div>
             <div className = 'user'>{`@${team?.user?.display_name}`}</div>
             <div className = 'team'>{team?.user?.metadata?.team_name || `Team ${team?.user?.display_name}`}</div>

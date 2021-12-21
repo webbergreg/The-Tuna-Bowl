@@ -8,7 +8,8 @@ const API_BASE_URL = 'https://api.sleeper.app/v1/';
 const LEAGUE_ID = '718535437227999232';
 const PLAYERS_IN_LEAGUE = 12;
 const myArgs = process.argv.slice(2);
-const WEEK = myArgs[0];
+const YEAR = myArgs[0]
+const WEEK = myArgs[1];
 
 function getSleeperData(url){
 
@@ -61,19 +62,51 @@ async function scrapeSleeper(week){
             return u.user_id === roster.owner_id
         });
 
-        const avatarPath = `../public/avatars/${user.avatar}.png`;
+        //download the user avatar, at this point in time
+        const userAvatarFilename = `${YEAR}-${WEEK}-${user.avatar}.png`;
+        const avatarPath = `../public/avatars/${userAvatarFilename}`;
         const avatarUrl = `https://sleepercdn.com/avatars/thumbs/${user.avatar}`;
 
         try {
             if (fs.existsSync(avatarPath)) {
 
             }else{
-                console.log(`Download avatar: ${user.avatar}`);
+                console.log(`Download user avatar: ${user.avatar}`);
                 await download(avatarUrl, avatarPath);
                 console.log(`Download complete`);
             }
         } catch(err) {
             
+        }
+        user.avatar = userAvatarFilename;
+
+        //download the roster avatar, at this point in time
+        const metaAvatarUrl = user?.metadata?.avatar;
+        if(metaAvatarUrl){
+
+            const urlPieces = metaAvatarUrl.split('/');
+            const fileName = urlPieces[urlPieces.length-1];
+            let file = fileName.split('.')[0];
+            let ext = fileName.split('.')[1];
+            if(!ext){
+                ext = 'png';
+            }
+            
+            const userMetaAvatarFilename = `${YEAR}-${WEEK}-${file}.${ext}`;
+            const metaAvatarPath = `../public/avatars/${userMetaAvatarFilename}`;
+            
+            try {
+                if (fs.existsSync(metaAvatarPath)) {
+                    
+                }else{
+                    console.log(`Download user metadata avatar: ${metaAvatarUrl}`);
+                    await download(metaAvatarUrl, metaAvatarPath);
+                    console.log(`Download complete`);
+                }
+            } catch(err) {
+                
+            }
+            user.metadata.avatar = userMetaAvatarFilename;
         }
         
         matchup.roster = roster;
