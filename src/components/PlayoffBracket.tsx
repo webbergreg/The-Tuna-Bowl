@@ -5,8 +5,13 @@ import '../css/PlayoffBracket.css';
 import {useContext} from 'react';
 import { SeasonContext } from './App';
 import dead from '../img/dead.png';
+import vs1 from '../img/vs1.gif';
+import vs2 from '../img/vs2.gif';
+import vs3 from '../img/vs3.gif';
+import vs4 from '../img/vs4.gif';
+import vs5 from '../img/vs5.gif';
 
-export const PlayoffBracket = ({})=>{
+export const PlayoffBracket = ()=>{
 
     const {seasonKey} = useContext(SeasonContext);
     const [bracket, setBracket] = useState([]);
@@ -14,7 +19,7 @@ export const PlayoffBracket = ({})=>{
         axios.get(`${process.env.PUBLIC_URL}/data/${seasonKey}-playoffs.json`).then((res)=>{
             setBracket(res.data);
         })
-    }, []);
+    }, [seasonKey]);
 
     if(bracket.length === 0){
         return null;
@@ -43,22 +48,22 @@ export const PlayoffBracket = ({})=>{
     return <div className="PlayoffBracket">
         <div className = 'round-divider r3'/>
         <div className = 'PlayoffBracket-Round round3'>
-            <Matchup matchup = {champGame}/>
+            <Matchup vs = {<img src = {vs1} alt = 'vs.'/>} matchup = {champGame}/>
         </div>
         <div className = 'round-divider r2'/>
         <div className = 'PlayoffBracket-Round round2'>
-            <Matchup matchup = {r2Left}/>
-            <Matchup matchup = {r2Right}/>
+            <Matchup vs = {<img src = {vs2} alt = 'vs.'/>} matchup = {r2Left}/>
+            <Matchup vs = {<img src = {vs3} alt = 'vs.'/>} matchup = {r2Right}/>
         </div>
         <div className = 'round-divider r1'/>
         <div className = 'PlayoffBracket-Round round1'>
-            <Matchup matchup = {r1Left}/>
-            <Matchup matchup = {r1Right}/>
+            <Matchup vs = {<img src = {vs4} alt = 'vs.'/>} matchup = {r1Left}/>
+            <Matchup vs = {<img src = {vs5} alt = 'vs.'/>} matchup = {r1Right}/>
         </div>
     </div>
 }
 
-export const Matchup =({matchup}) =>{
+export const Matchup =({matchup, vs}) =>{
     
     if(!matchup){
         return null;
@@ -67,6 +72,7 @@ export const Matchup =({matchup}) =>{
     return <div className = 'PlayoffBracket-Matchup'>
         <Team winner = {(matchup.w === matchup.t1) ? true : (!matchup.w) ? null : false} owner = {matchup.t1_owner}/>
         <Team winner = {matchup.w === matchup.t2 ? true : (!matchup.w) ? null : false} alt = {true} owner = {matchup.t2_owner}/>
+        <div className = 'vs'>{vs}</div>
     </div>
 }
 

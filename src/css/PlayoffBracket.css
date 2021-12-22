@@ -9,6 +9,22 @@
     display: flex;
     flex-direction: column;
     border:2px solid black;
+    position:relative;
+}
+
+.PlayoffBracket-Matchup .vs{
+    position:absolute;
+    width:30px;
+    height:30px;
+    top: 50%;
+    left:50%;
+    margin-top:-15px;
+    margin-left:-15px;
+}
+
+.PlayoffBracket-Matchup .vs img{
+    max-width:100%;
+    max-height:100%;
 }
 
 .PlayoffBracket-Round{
@@ -125,5 +141,13 @@
 
     .PlayoffBracket-Team .score{
         font-size:22px;
+    }
+
+
+    .PlayoffBracket-Matchup .vs{
+        width:50px;
+        height:50px;
+        margin-top:-25px;
+        margin-left:-25px;
     }
 }

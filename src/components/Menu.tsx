@@ -29,7 +29,7 @@ export const Menu = ()=>{
                 <a href = '/2021'>
                     {HEADER_2021}
                 </a>
-                <a href = 'https://sleeper.app/leagues/718535437227999232' target = '_blank'>
+                <a href = 'https://sleeper.app/leagues/718535437227999232' rel="noreferrer" target = '_blank'>
                     <img src = {sleep} alt = 'Sleeper'/>
                 </a>
             </div>
