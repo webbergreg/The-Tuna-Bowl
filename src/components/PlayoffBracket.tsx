@@ -65,8 +65,8 @@ export const Matchup =({matchup}) =>{
     }
 
     return <div className = 'PlayoffBracket-Matchup'>
-        <Team winner = {matchup.w !== null ? matchup.w === 1 ? true : false : null} owner = {matchup.t1_owner}/>
-        <Team winner = {matchup.w !== null ? matchup.w === 2 ? true : false : null} alt = {true} owner = {matchup.t2_owner}/>
+        <Team winner = {(matchup.w === matchup.t1) ? true : (!matchup.w) ? null : false} owner = {matchup.t1_owner}/>
+        <Team winner = {matchup.w === matchup.t2 ? true : (!matchup.w) ? null : false} alt = {true} owner = {matchup.t2_owner}/>
     </div>
 }
 
