@@ -11,7 +11,7 @@ import vs4 from '../img/vs4.gif';
 import vs5 from '../img/vs5.gif';
 import vs6 from '../img/vs6.gif';
 
-export const WeeklyLeagueInfo = ({show, weekInt})=>{
+export const WeeklyLeagueInfo = ({show, weekInt, exclude=[]})=>{
 
     const {seasonKey} = useContext(SeasonContext);
     const [matchups, setMatchups] = useState([]);
@@ -37,7 +37,11 @@ export const WeeklyLeagueInfo = ({show, weekInt})=>{
     return <div className="WeeklyLeagueInfo">
 
         {matchups.map((matchup, i)=>{
-            return <Matchup vs = {vsImgs[i]} key = {i} matchup= {matchup}/>;
+            if(exclude.indexOf(i) !== -1){
+                return null;
+            }else{
+                return <Matchup vs = {vsImgs[i]} key = {i} matchup= {matchup}/>;
+            }
         })}
         
     </div>
