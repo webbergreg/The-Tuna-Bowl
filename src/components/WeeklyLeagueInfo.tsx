@@ -48,6 +48,10 @@ export const Matchup =({vs, matchup}) =>{
     const p1 = matchup[0];
     const p2 = matchup[1];
 
+    if(!p1 || !p2){
+        return null;
+    }
+
     return <div className = 'WeeklyLeagueInfo-Matchup'>
         <Team side = 'left' winner = {p1.points > p2.points} team = {p1}/>
         <Team side = 'right' winner = {p2.points > p1.points} team = {p2}/>

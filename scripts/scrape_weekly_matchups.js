@@ -52,8 +52,12 @@ async function scrapeSleeper(week){
         matchup.roster = roster;
         matchup.user = user;
 
-        //put into the proper game
-        games[matchup.matchup_id - 1].push(matchup);
+
+        if(matchup.matchup_id){
+            //put into the proper game
+            games[matchup.matchup_id - 1].push(matchup);
+        }
+        
     }
 
     //write the info to a file

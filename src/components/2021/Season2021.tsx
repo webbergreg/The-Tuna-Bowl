@@ -12,6 +12,7 @@ import { Week11 } from './Week11';
 import { Week12 } from './Week12';
 import { Week13 } from './Week13';
 import { Week14 } from './Week14';
+import { Week15 } from './Week15';
 import img2 from '../../img/2.gif';
 import img1 from '../../img/1.gif';
 import img0 from '../../img/0.gif';
@@ -98,7 +99,7 @@ export const Season2021 = ()=>{
             <Route path = '/week-12' element = {<Week12/>}/>
             <Route path = '/week-13' element = {<Week13/>}/>
             <Route path = '/week-14' element = {<Week14/>}/>
-            <Route path = '/week-15' element = {<WeekComingSoon weekInt = {15}/>}/>
+            <Route path = '/week-15' element = {<Week15/>}/>
             <Route path = '/week-16' element = {<WeekComingSoon weekInt = {16}/>}/>
             <Route path = '/week-17' element = {<WeekComingSoon weekInt = {17}/>}/>
         </Routes>
