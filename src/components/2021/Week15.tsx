@@ -29,7 +29,7 @@ export const Week15 = ()=>{
         <LazyImg className = 'inline' src = {finishHim} alt ='Finish Him!'/>
         <p>Moran moves on to Round 2 versus his mortal enemy the Rucunt and I for one can't wait for this matchup. Moran's team has cost him a fortune and it shows. They're prettay good. His team of titans will go Head 2 Head vs the Giant himself, Cooper Kupp. For Moran's sake, let's hope he gets his revenge.</p>
         <LazyImg className = 'inline' src = {davidVgoliath} alt ='Dave vs. Gloiath'/>
-        <p>**NPC enjoying his bye week might be misleading. We saw him lose Hopkins and Uncle Lenny for the season, Evans to a hammy is questionable and KC is now in the middle of a covid outbreak with Kelce already Covid Positive. Mahomes and CEH might be next putting all three of them in Question for Round 2. After talking to NPC, he assured me, "Everything is fine."</p>
+        <p>**NPC enjoying his bye week might be misleading. We saw him loose Hopkins and Uncle Lenny for the season, Evans to a hammy is questionable and KC is now in the middle of a covid outbreak with Kelce already Covid Positive. Mahomes and CEH might be next putting all three of them in Question for Round 2. After talking to NPC, he assured me, "Everything is fine."</p>
         <LazyImg className = 'inline' src = {thisFine} alt ='Dave vs. Gloiath'/>
         <p>As always, set those lineups.</p>
         <p>Cheers,<br/>The CapMan</p>
