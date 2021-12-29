@@ -24,6 +24,7 @@ export const WeeklyLeagueInfo = (props : IWeeklyLeageInfoPops)=>{
     const {show, weekInt, exclude, lol} = props;
     const {seasonKey} = useContext(SeasonContext);
     const [matchups, setMatchups] = useState([]);
+
     useEffect(()=>{
         axios.get(`${process.env.PUBLIC_URL}/data/${seasonKey}-${weekInt}-matchups.json`).then((res)=>{
             setMatchups(res.data);
@@ -46,7 +47,7 @@ export const WeeklyLeagueInfo = (props : IWeeklyLeageInfoPops)=>{
     return <div className="WeeklyLeagueInfo">
 
         {matchups.map((matchup, i)=>{
-            if(exclude.indexOf(i) !== -1){
+            if(exclude || [].indexOf(i) !== -1){
                 return null;
             }else{
                 return <Matchup vs = {vsImgs[i]} key = {i} matchup= {matchup} lol = {lol || []}/>;
