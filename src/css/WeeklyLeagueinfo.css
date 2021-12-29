@@ -111,6 +111,15 @@
     height:100%;
 }
 
+.WeeklyLeagueInfo-Team .lol{
+    position:absolute;
+    position: absolute;
+    left: 80px;
+    top: 7px;
+    width: 60px;
+    transform: rotate(-20deg);
+}
+
 @media screen and (min-width: 768px) {
     .WeeklyLeagueInfo-Team .avatar{
         width:55px;
@@ -151,5 +160,11 @@
         height:50px;
         margin-top:-25px;
         margin-left:-25px;
+    }
+
+    .WeeklyLeagueInfo-Team .lol{
+        left: 110px;
+        top: 12px;
+        width: 80px;
     }
 }

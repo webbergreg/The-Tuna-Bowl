@@ -10,9 +10,18 @@ import vs3 from '../img/vs3.gif';
 import vs4 from '../img/vs4.gif';
 import vs5 from '../img/vs5.gif';
 import vs6 from '../img/vs6.gif';
+import lolSrc from '../img/lol.gif';
 
-export const WeeklyLeagueInfo = ({show, weekInt, exclude=[]})=>{
+interface IWeeklyLeageInfoPops{
+    weekInt:number;
+    show?:boolean;
+    exclude?:number[];
+    lol?:number[];
+}
 
+export const WeeklyLeagueInfo = (props : IWeeklyLeageInfoPops)=>{
+
+    const {show, weekInt, exclude, lol} = props;
     const {seasonKey} = useContext(SeasonContext);
     const [matchups, setMatchups] = useState([]);
     useEffect(()=>{
@@ -40,14 +49,14 @@ export const WeeklyLeagueInfo = ({show, weekInt, exclude=[]})=>{
             if(exclude.indexOf(i) !== -1){
                 return null;
             }else{
-                return <Matchup vs = {vsImgs[i]} key = {i} matchup= {matchup}/>;
+                return <Matchup vs = {vsImgs[i]} key = {i} matchup= {matchup} lol = {lol || []}/>;
             }
         })}
         
     </div>
 }
 
-export const Matchup =({vs, matchup}) =>{
+export const Matchup =({vs, matchup, lol}) =>{
 
     const p1 = matchup[0];
     const p2 = matchup[1];
@@ -57,17 +66,19 @@ export const Matchup =({vs, matchup}) =>{
     }
 
     return <div className = 'WeeklyLeagueInfo-Matchup'>
-        <Team side = 'left' winner = {p1.points > p2.points} team = {p1}/>
-        <Team side = 'right' winner = {p2.points > p1.points} team = {p2}/>
+        <Team side = 'left' winner = {p1.points > p2.points} team = {p1} lol = {lol.indexOf(p1.roster_id) !== -1}/>
+        <Team side = 'right' winner = {p2.points > p1.points} team = {p2} lol = {lol.indexOf(p2.roster_id) !== -1}/>
         <div className = 'vs'>{vs}</div>
     </div>
 }
 
-export const Team =({team, winner, side}) =>{
+export const Team =({team, winner, side, lol}) =>{
 
     const winClass = (winner) ? 'winner' : 'loser';
     const avatar = team?.user?.avatar;
-    
+
+    const lolImg = (lol) ? <img className = 'lol' src = {lolSrc}/> : null;
+
     return <div className = {`WeeklyLeagueInfo-Team ${winClass} ${side}`}>
         <div className = 'team-info'>
             <div className = 'avatar'>
@@ -77,5 +88,6 @@ export const Team =({team, winner, side}) =>{
             <div className = 'team'>{team?.user?.metadata?.team_name || `Team ${team?.user?.display_name}`}</div>
         </div>
         <div className = 'score'>{team?.points.toFixed(2)}</div>
+        {lolImg}
     </div>
 }

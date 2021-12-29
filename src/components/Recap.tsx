@@ -15,8 +15,9 @@ interface IRecapProps{
   weekInt?:number;
   hideInfo?:boolean;
   exclude?:number[];
+  lol?:number[];
 }
-export const Recap = ({title, children, weekInt, hideInfo, exclude = []} :IRecapProps) => {
+export const Recap = ({title, children, weekInt, hideInfo, exclude, lol} :IRecapProps) => {
 
   const {seasonKey} = useContext(SeasonContext);
   const [showInfo, setShowInfo] = useState(true);
@@ -45,7 +46,7 @@ export const Recap = ({title, children, weekInt, hideInfo, exclude = []} :IRecap
   return (
     <section id = {`recap-${weekInt}`} className={`Recap recap-style-${weekInt}`}>
       <h2>{title}</h2>
-      {!hideInfo && <WeeklyLeagueInfo exclude = {exclude} show = {showInfo} weekInt = {weekInt}/>}
+      {!hideInfo && <WeeklyLeagueInfo exclude = {exclude} lol = {lol} show = {showInfo} weekInt = {weekInt}/>}
       {btnBack}
       {!hideInfo && btnShowInfo}
       <div className = 'recap-wrapper'>
