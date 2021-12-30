@@ -34,7 +34,6 @@ export const Menu = ()=>{
                 </a>
             </div>
             <img className = 'divider' src = {divider} alt = 'Divider'/>
-            <div className = 'counter' id="sfc7krrufy3x6l16dx26wuenjd1pbsl5xew"></div>
         </nav>
         <div className = 'btn-show-menu' onClick = {toggleMenu}>
             <img src = {iconSrc} alt = 'Menu'/>
