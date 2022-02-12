@@ -336,6 +336,18 @@
   font-family: 'University';
 }
 
+/* Style 16 */
+.recap-style-16 h2{
+  color:white;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: black;
+}
+
+.recap-style-16 h3{
+  color:black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 
 @keyframes gradient {
   0% {

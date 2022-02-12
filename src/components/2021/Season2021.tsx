@@ -25,6 +25,7 @@ import champ from '../../img/champ.gif';
 import minnow from '../../img/minnow.gif';
 import construction from '../../img/construction.gif';
 import minnowLouie from '../../img/minnow-2021.jpg';
+import moranChamp from '../../img/moranChamp.jpg';
 
 import '../../css/Season.css';
 
@@ -51,10 +52,6 @@ export const Season2021 = ()=>{
 
     const SEASON_KEY = '2021';
 
-    const placeholder = <div className = 'placeholder'>
-        <img src = {construction} alt = 'Under Construction'/>
-    </div>;
-
     const season = <section id = {`season-${SEASON_KEY}`} className={`Season`}>
         {HEADER_2021}
         <h3 className = 'Season-recap-title'>
@@ -70,7 +67,7 @@ export const Season2021 = ()=>{
                 <h4>
                     <img src = {champ} alt = 'Champion'/>
                 </h4>
-                {placeholder}
+                {<img className = 'champ-image' src = {moranChamp} alt = 'Moran'/>}
             </div>
             <PlayoffBracket/>
             <div id = 'minnow' className = 'Season-results-section'>
