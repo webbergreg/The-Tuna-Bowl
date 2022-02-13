@@ -14,6 +14,7 @@ import { Week13 } from './Week13';
 import { Week14 } from './Week14';
 import { Week15 } from './Week15';
 import { Week16 } from './Week16';
+import { Week17 } from './Week17';
 import img2 from '../../img/2.gif';
 import img1 from '../../img/1.gif';
 import img0 from '../../img/0.gif';
@@ -99,7 +100,7 @@ export const Season2021 = ()=>{
             <Route path = '/week-14' element = {<Week14/>}/>
             <Route path = '/week-15' element = {<Week15/>}/>
             <Route path = '/week-16' element = {<Week16/>}/>
-            <Route path = '/week-17' element = {<WeekComingSoon weekInt = {17}/>}/>
+            <Route path = '/week-17' element = {<Week17/>}/>
         </Routes>
     </SeasonContext.Provider>
 }

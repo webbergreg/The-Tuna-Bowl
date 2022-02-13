@@ -40,6 +40,12 @@
   src: url('/src/fonts/ComicaRegular.otf') format("opentype");
 }
 
+@font-face {
+  font-family: 'browns';
+  src: url('/src/fonts/browns.ttf') format("truetype");
+}
+
+
 .App {
   text-align: left;
   box-sizing: border-box;
