@@ -48,11 +48,11 @@ export const Week0 = ()=>{
             <GolfCard front = {noxFront} back = {noxBack} playerKey = {'nox'} offX = {12} offY = {-6} ro = {12}/>
             <GolfCard front = {ronFront} back = {ronBack} playerKey = {'ron'} offX = {20} offY = {20} ro = {-3}/>
             <GolfCard front = {moranFront} back = {moranBack} playerKey = {'moran'} offX = {2} offY = {-12} ro = {-8}/>
-            <GolfCard front = {timFront} back = {timBack} playerKey = {'tim'} offX = {-13} offY = {4} ro = {14}/>
-            <GolfCard front = {gregFront} back = {gregBack} playerKey = {'greg'} offX = {2} offY = {-12} ro = {-8}/>
-            <GolfCard front = {ryanFront} back = {ryanBack} playerKey = {'ryan'} offX = {-13} offY = {4} ro = {6}/>
-            <GolfCard front = {curtFront} back = {curtBack} playerKey = {'curt'} offX = {0} offY = {5} ro = {6}/>
-            <GolfCard front = {jeffFront} back = {jeffBack} playerKey = {'jeff'} offX = {0} offY = {5} ro = {3}/>
+            <GolfCard front = {timFront} back = {timBack} playerKey = {'tim'} offX = {-13} offY = {20} ro = {14}/>
+            <GolfCard front = {gregFront} back = {gregBack} playerKey = {'greg'} offX = {12} offY = {8} ro = {-8}/>
+            <GolfCard front = {ryanFront} back = {ryanBack} playerKey = {'ryan'} offX = {0} offY = {30} ro = {6}/>
+            <GolfCard front = {curtFront} back = {curtBack} playerKey = {'curt'} offX = {12} offY = {-2} ro = {6}/>
+            <GolfCard front = {jeffFront} back = {jeffBack} playerKey = {'jeff'} offX = {-6} offY = {14} ro = {3}/>
         </div>
     </Recap>
 }
