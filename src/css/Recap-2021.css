@@ -1,0 +1,228 @@
+
+.recap-2021.recap-style-0 h2{
+  padding-top:5px;
+  background:#73c3a6;
+  font-family:'Sport-Day-Bold';
+}
+/* Style 1 */
+.recap-2021.recap-style-1 h2{
+  background:#ff6d1a;
+  font-family: 'Redneck';
+  color:#000525;
+}
+
+.recap-2021.recap-style-1 h3{
+  color:#ff6d1a;
+  font-family: 'University';
+  text-shadow: 2px 2px black;
+}
+
+/* Style 2 */
+.recap-2021.recap-style-2 h2{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:#00ffff;
+  background:pink;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+.recap-2021.recap-style-2 h3{
+  color:#26150a;
+  font-family: 'Sport-Day-Bold';
+}
+
+/* Style 3 */
+.recap-2021.recap-style-3 h2{
+  font-family:'Times New Roman', Times, serif;
+  color:white;
+  background:linear-gradient(90deg, rgba(205,203,44,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.recap-2021.recap-style-2 h3{
+  color:rgba(205,203,44,1);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style 4 */
+.recap-2021.recap-style-4 h2{
+  font-family:'Times New Roman', Times, serif;
+  color:white;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: linear-gradient(45deg, #444cf7 50%, #e5e5f7 50%);
+  background-size: 10px 10px;
+}
+
+.recap-2021.recap-style-4 h3{
+  font-family:'Franchise';
+}
+
+/* Style 5 */
+.recap-2021.recap-style-5 h2{
+  font-family:'Sport-Day-Bold';
+  background: linear-gradient(-45deg, maroon, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 1s ease infinite;
+  color:white;
+}
+
+.recap-2021.recap-style-5 h3{
+  font-family: fantasy;
+  color:#a64a15;
+}
+
+/* Style 6 */
+.recap-2021.recap-style-6 h2{
+  font-family:'love_craft_italic';
+  background:#8b0c0d;
+}
+
+.recap-2021.recap-style-6 h3{
+  color:#8b0c0d;
+  font-family: 'varsity_regular';
+}
+
+/* Style 7 */
+.recap-2021.recap-style-7 h2{
+  font-family:'Franchise';
+  color:rgba(255,0,0);
+  animation: color-shift 5s ease infinite;
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.recap-2021.recap-style-7 h3{
+  color:pink;
+  font-family: 'Sport-Day-Bold';
+}
+
+/* Style 8 */
+.recap-2021.recap-style-8 h2{
+  font-family:'University';
+  color:white;
+  background:black;
+}
+
+.recap-2021.recap-style-8 h3{
+  color:pink;
+  font-family: 'Sport-Day-Bold';
+}
+
+/* Style 9 */
+.recap-2021.recap-style-9 h2{
+  font-family:'ComicaRegular';
+  color:white;
+  background:blue;
+}
+
+.recap-2021.recap-style-9 h3{
+  color:blue;
+  font-family: 'University';
+}
+
+/* Style 10 */
+.recap-2021.recap-style-10 h2{
+  font-family:'varsity_regular';
+  color:white;
+  background:black;
+}
+
+.recap-2021.recap-style-10 h3{
+  color:blue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Style 11 */
+.recap-2021.recap-style-11 h2{
+  font-family:'Times New Roman', Times, serif;
+  color:white;
+  background:black;
+}
+
+.recap-2021.recap-style-11 h3{
+  color:black;
+  font-family: 'University';
+}
+
+/* Style 12 */
+.recap-2021.recap-style-12 h2{
+  font-family:'Sport-Day-Bold';
+  color:white;
+  background:purple;
+}
+
+.recap-2021.recap-style-12 h3{
+  color:orangered;
+  font-family: 'Franchise';
+}
+
+/* Style 13 */
+.recap-2021.recap-style-13 h2{
+  font-family:'University';
+  color:yellow;
+  font-size:32px;
+  background: linear-gradient(-45deg, rgb(104, 3, 3), #4ae73c, #d52391, #d5cf23);
+  background-size: 400% 400%;
+  animation: gradient 1s ease infinite;
+}
+
+.recap-2021.recap-style-13 h3{
+  color:#d52391;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style 14 */
+.recap-2021.recap-style-14 h2{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color:lime;
+  text-shadow: 4px 4px black, -4px -4px purple;;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image:  repeating-linear-gradient(45deg, red 25%, transparent 25%, transparent 75%, blue 75%, red), repeating-linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%, #e5e5f7 75%, pink 75%, #444cf7);
+  background-position: 0 0, 10px 10px;
+  background-size: 20px 20px;
+}
+
+.recap-2021.recap-style-14 h3{
+  color:peru;
+  font-family: 'Franchise';
+}
+
+/* Style 15 */
+.recap-2021.recap-style-15 h2{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:#104bc4;
+  background:yellow;
+}
+
+.recap-2021.recap-style-15 h3{
+  color:blue;
+  font-family: 'University';
+}
+
+/* Style 16 */
+.recap-2021.recap-style-16 h2{
+  color:white;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: black;
+}
+
+.recap-2021.recap-style-16 h3{
+  color:black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Style 17 */
+.recap-2021.recap-style-17 h2{
+  color:white;
+  font-family: 'browns', sans-serif;
+  background-color: #311d00;
+  color:#ff3c00;
+}
+
+.recap-2021.recap-style-17 h2 img{
+  height:70px;
+}
+
+.recap-2021.recap-style-17 h3{
+  color:#ff3c00;
+  font-family: 'Times New Roman', Times, serif;
+}

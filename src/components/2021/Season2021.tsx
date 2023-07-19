@@ -52,6 +52,7 @@ export const HEADER_2021 = <h2 className = 'Season-title'>
 export const Season2021 = ()=>{
 
     const SEASON_KEY = '2021';
+    const WEEKS = 17;
 
     const season = <section id = {`season-${SEASON_KEY}`} className={`Season`}>
         {HEADER_2021}
@@ -80,7 +81,7 @@ export const Season2021 = ()=>{
         </div>
     </section>
 
-    return <SeasonContext.Provider value={{seasonKey:SEASON_KEY}}>
+    return <SeasonContext.Provider value={{seasonKey:SEASON_KEY, weeks:WEEKS}}>
         <Routes>
             <Route path = '/' element = {season}></Route>
             <Route path = '/week-0' element = {<Week0/>}/>

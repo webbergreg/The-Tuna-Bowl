@@ -1,4 +1,6 @@
 import '../css/Recap.css';
+import '../css/Recap-2021.css';
+import '../css/Recap-2023.css';
 import {useContext, useState} from 'react';
 import { SeasonContext } from './App';
 import previous from '../img/previous.gif';
@@ -44,7 +46,7 @@ export const Recap = ({title, children, weekInt, hideInfo, exclude, lol} :IRecap
   </div>
   
   return (
-    <section id = {`recap-${weekInt}`} className={`Recap recap-style-${weekInt}`}>
+    <section id = {`recap-${weekInt}`} className={`Recap recap-${seasonKey} recap-style-${weekInt}`}>
       <h2>{title}</h2>
       {!hideInfo && <WeeklyLeagueInfo exclude = {exclude} lol = {lol} show = {showInfo} weekInt = {weekInt}/>}
       {btnBack}

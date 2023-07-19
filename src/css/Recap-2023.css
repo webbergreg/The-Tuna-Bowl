@@ -1,0 +1,25 @@
+.recap-2023.recap-style-0{
+    background-image:url('/src/img/oak.jpeg');
+}
+
+.recap-2023.recap-style-0 h2{
+    margin-top:80px;
+    font-size:50px;
+    font-family: 'University';
+    color:green;
+    text-shadow:2px 2px white;;
+}
+
+.recap-2023.recap-style-0 p{
+    font-size:20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+}
+
+.recap-2023 .cards{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}

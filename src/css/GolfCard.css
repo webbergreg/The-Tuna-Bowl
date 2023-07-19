@@ -1,0 +1,42 @@
+
+
+.card-wrapper{
+    perspective: 800px;
+}
+
+.golf-card{
+    margin:20px;
+    width:323px;
+    height:457px;
+    position:relative;
+    transform-style: preserve-3d;
+    transition:transform 500ms ease-out;
+}
+
+.golf-card.turned{
+    transform: rotateY(0.5turn);
+}
+
+.card-face{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    backface-visibility: hidden;
+}
+
+.card-face img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    border-radius:30px;
+    border:1px solid black;
+    overflow: hidden;
+}
+
+.card-face.back{
+    transform: rotateY(0.5turn);
+}
