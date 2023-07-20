@@ -2,47 +2,47 @@
 
 @font-face {
   font-family: 'University';
-  src: url('/src/fonts/University.otf') format("opentype");
+  src: url('../fonts/University.otf') format("opentype");
 }
 
 @font-face {
   font-family: 'Sport-Day-Bold';
-  src: url('/src/fonts/Sport-Day-Bold.ttf') format("truetype");
+  src: url('../fonts/Sport-Day-Bold.ttf') format("truetype");
 }
 
 @font-face {
   font-family: 'Redneck';
-  src: url('/src/fonts/Redneck.ttf') format("truetype");
+  src: url('../fonts/Redneck.ttf') format("truetype");
 }
 
 @font-face {
   font-family: 'Circus';
-  src: url('/src/fonts/Circus.ttf') format("truetype");
+  src: url('../fonts/Circus.ttf') format("truetype");
 }
 
 @font-face {
   font-family: 'varsity_regular';
-  src: url('/src/fonts/varsity_regular.ttf') format("truetype");
+  src: url('../fonts/varsity_regular.ttf') format("truetype");
 }
 
 @font-face {
   font-family: 'Franchise';
-  src: url('/src/fonts/Franchise.ttf') format("truetype");
+  src: url('../fonts/Franchise.ttf') format("truetype");
 }
 
 @font-face {
   font-family: 'love_craft_italic';
-  src: url('/src/fonts/love_craft_italic.otf') format("opentype");
+  src: url('../fonts/love_craft_italic.otf') format("opentype");
 }
 
 @font-face {
   font-family: 'ComicaRegular';
-  src: url('/src/fonts/ComicaRegular.otf') format("opentype");
+  src: url('../fonts/ComicaRegular.otf') format("opentype");
 }
 
 @font-face {
   font-family: 'browns';
-  src: url('/src/fonts/browns.ttf') format("truetype");
+  src: url('../fonts/browns.ttf') format("truetype");
 }
 
 
@@ -77,7 +77,7 @@ h3{
 }
 
 body{
-  background-image:url('/src/img/field_bg_2.png');
+  background-image:url('../img/field_bg_2.png');
   background-size:contain;
   background-repeat: repeat; 
   overflow-x: hidden;
