@@ -80,7 +80,7 @@ export const Team =({team, winner, side, lol}) =>{
     const winClass = (winner) ? 'winner' : 'loser';
     const avatar = team?.user?.avatar;
 
-    const lolImg = (lol) ? <img className = 'lol' src = {lolSrc}/> : null;
+    const lolImg = (lol) ? <img className = 'lol' alt = 'lol' src = {lolSrc}/> : null;
 
     return <div className = {`WeeklyLeagueInfo-Team ${winClass} ${side}`}>
         <div className = 'team-info'>

@@ -24,7 +24,6 @@ import football_5 from '../../img/football_5.gif';
 import divider1 from '../../img/divider1.gif';
 import champ from '../../img/champ.gif';
 import minnow from '../../img/minnow.gif';
-import construction from '../../img/construction.gif';
 import minnowLouie from '../../img/minnow-2021.jpg';
 import moranChamp from '../../img/moranChamp.jpg';
 
@@ -35,7 +34,6 @@ import {
     Route,
   } from "react-router-dom";
 import { Nav } from '../Nav';
-import { WeekComingSoon } from '../WeekComingSoon';
 import { SeasonContext } from '../App';
 import { Week0 } from './Week0';
 import { PlayoffBracket } from '../PlayoffBracket';
