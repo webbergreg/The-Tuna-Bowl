@@ -6,6 +6,7 @@ import close from '../img/close.gif';
 import home from '../img/home.gif';
 import sleep from '../img/sleep.gif';
 import { HEADER_2021 } from './2021/Season2021';
+import { HEADER_2023 } from './2023/Season2023';
 import divider from '../img/divider2.gif';
 
 export const Menu = ()=>{
@@ -28,6 +29,9 @@ export const Menu = ()=>{
                 </a>
                 <a href = '/2021'>
                     {HEADER_2021}
+                </a>
+                <a href = '/2023'>
+                    {HEADER_2023}
                 </a>
                 <a href = 'https://sleeper.app/leagues/718535437227999232' rel="noreferrer" target = '_blank'>
                     <img src = {sleep} alt = 'Sleeper'/>

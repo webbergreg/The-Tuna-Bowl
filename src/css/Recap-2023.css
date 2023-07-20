@@ -4,14 +4,14 @@
 
 .recap-2023.recap-style-0 h2{
     margin-top:80px;
-    font-size:50px;
+    font-size:24px;
     font-family: 'University';
     color:green;
     text-shadow:2px 2px white;;
 }
 
 .recap-2023.recap-style-0 p{
-    font-size:20px;
+    font-size:16px;
     font-family: 'Courier New', Courier, monospace;
     font-weight:bold;
 }
@@ -22,4 +22,21 @@
     align-items: center;
     justify-content:space-around;
     flex-wrap: wrap;
+}
+
+.recap-2023.recap-style-0 img{
+    width:unset;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+    .recap-2023.recap-style-0 h2{
+        font-size:50px;
+    }
+
+    .recap-2023.recap-style-0 p{
+        font-size:20px;
+    }
 }

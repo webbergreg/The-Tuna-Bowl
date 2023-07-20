@@ -25,9 +25,19 @@ import ryanFront from '../../img/ryanFront.jpg';
 import ryanBack from '../../img/ryanBack.jpg';
 import jeffFront from '../../img/jeffFront.jpg';
 import jeffBack from '../../img/jeffBack.jpg';
+import click1 from '../../img/click1.gif';
+import click2 from '../../img/click2.gif';
+import chipsho4 from '../../img/chipsho4.gif';
+import golf1 from '../../img/golf1.gif';
+import golf2 from '../../img/golf2.gif';
+import { useState } from 'react';
 
 export const Week0 = ()=>{
 
+    const [clickedCard, setClickedCard] = useState(false);
+    const handleClick = ()=>{
+        setClickedCard(true);
+    }
     const title = <>
     <img src = {spingolf} alt = 'golf'/> 2023 Tuna Tour Draft Scramble <img src = {spingolf} alt = 'golf'/></>
     return <Recap hideInfo = {true} weekInt = {0} title = {title}>
@@ -41,18 +51,20 @@ export const Week0 = ()=>{
         <br/>
         <br/>
         <div className = 'cards'>
-            <GolfCard front = {daveFront} back = {daveBack} playerKey = {'dave'} offX = {5} offY = {20} ro = {-8}/>
-            <GolfCard front = {frankFront} back = {frankBack} playerKey = {'frank'} offX = {20} offY = {10} ro = {7}/>
-            <GolfCard front = {rupeFront} back = {rupeBack} playerKey = {'rupe'} offX = {-4} offY = {6} ro = {-5}/>
-            <GolfCard front = {louieFront} back = {louieBack} playerKey = {'louie'} offX = {5} offY = {20} ro = {0}/>
-            <GolfCard front = {noxFront} back = {noxBack} playerKey = {'nox'} offX = {12} offY = {-6} ro = {7}/>
-            <GolfCard front = {ronFront} back = {ronBack} playerKey = {'ron'} offX = {20} offY = {20} ro = {-3}/>
-            <GolfCard front = {moranFront} back = {moranBack} playerKey = {'moran'} offX = {2} offY = {-12} ro = {-8}/>
-            <GolfCard front = {timFront} back = {timBack} playerKey = {'tim'} offX = {-13} offY = {20} ro = {-2}/>
-            <GolfCard front = {gregFront} back = {gregBack} playerKey = {'greg'} offX = {12} offY = {8} ro = {-6}/>
-            <GolfCard front = {ryanFront} back = {ryanBack} playerKey = {'ryan'} offX = {0} offY = {30} ro = {6}/>
-            <GolfCard front = {curtFront} back = {curtBack} playerKey = {'curt'} offX = {12} offY = {-2} ro = {6}/>
-            <GolfCard front = {jeffFront} back = {jeffBack} playerKey = {'jeff'} offX = {-6} offY = {14} ro = {3}/>
+            <GolfCard cardClicked = {handleClick} clickHere = {!clickedCard && click1} captain = {false} front = {daveFront} back = {daveBack} playerKey = {'dave'} offX = {5} offY = {20} ro = {-8}/>
+            <GolfCard cardClicked = {handleClick} clickHere = {!clickedCard && click2} captain = {false} front = {frankFront} back = {frankBack} playerKey = {'frank'} offX = {20} offY = {10} ro = {7}/>
+            <GolfCard cardClicked = {handleClick} clickHere = {null} captain = {false} front = {rupeFront} back = {rupeBack} playerKey = {'rupe'} offX = {-4} offY = {6} ro = {-5}/>
+            <GolfCard cardClicked = {handleClick} clickHere = {null} captain = {false} front = {louieFront} back = {louieBack} playerKey = {'louie'} offX = {5} offY = {20} ro = {0}/>
+            <GolfCard cardClicked = {handleClick} clickHere = {null} captain = {false} front = {noxFront} back = {noxBack} playerKey = {'nox'} offX = {12} offY = {-6} ro = {7}/>
+            <GolfCard cardClicked = {handleClick} clickHere = {null} captain = {false} front = {ronFront} back = {ronBack} playerKey = {'ron'} offX = {20} offY = {20} ro = {-3}/>
+            <GolfCard cardClicked = {handleClick} clickHere = {null} captain = {false} front = {moranFront} back = {moranBack} playerKey = {'moran'} offX = {2} offY = {-12} ro = {-8}/>
+            <GolfCard cardClicked = {handleClick} clickHere = {null} captain = {true} front = {timFront} back = {timBack} playerKey = {'tim'} offX = {-13} offY = {20} ro = {-2}/>
+            <GolfCard cardClicked = {handleClick} clickHere = {null} captain = {true} front = {gregFront} back = {gregBack} playerKey = {'greg'} offX = {12} offY = {8} ro = {-6}/>
+            <GolfCard cardClicked = {handleClick} clickHere = {null} captain = {true} front = {ryanFront} back = {ryanBack} playerKey = {'ryan'} offX = {0} offY = {30} ro = {6}/>
+            <GolfCard cardClicked = {handleClick} clickHere = {null} captain = {false} front = {curtFront} back = {curtBack} playerKey = {'curt'} offX = {12} offY = {-2} ro = {6}/>
+            <GolfCard cardClicked = {handleClick} clickHere = {null} captain = {false} front = {jeffFront} back = {jeffBack} playerKey = {'jeff'} offX = {-6} offY = {14} ro = {3}/>
         </div>
+        <img src = {golf2} alt = 'hole in one' className = 'golf-gif'/>
+        <img src = {golf1} alt = 'hole in one' className = 'golf-gif'/>
     </Recap>
 }

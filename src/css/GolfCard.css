@@ -4,6 +4,7 @@
     perspective: 800px;
 }
 
+
 .golf-card{
     margin:20px;
     width:323px;
@@ -35,6 +36,20 @@
     border-radius:30px;
     border:1px solid black;
     overflow: hidden;
+}
+
+.golf-card .cap-star{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -10px;
+    left: -10px;
+}
+
+.golf-card .click-here{
+    width:100% !important;
+    position: absolute;
+    transform:scale(0.5);
 }
 
 .card-face.back{
